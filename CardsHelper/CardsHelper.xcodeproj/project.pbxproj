@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D32FB7422B9A72900D187CB /* main.json in Resources */ = {isa = PBXBuildFile; fileRef = 0D32FB7322B9A72900D187CB /* main.json */; };
+		0D32FB7C22B9B41100D187CB /* OPTIBelwe-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0D32FB7A22B9B3FD00D187CB /* OPTIBelwe-Medium.otf */; };
+		0D32FB8222B9C36C00D187CB /* MXCornerRadius.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D32FB8122B9C36C00D187CB /* MXCornerRadius.m */; };
+		0D32FB8722B9ED3800D187CB /* SCVisitorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D32FB8522B9ED3700D187CB /* SCVisitorView.swift */; };
+		0D32FB8822B9ED3800D187CB /* SCVisitorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D32FB8622B9ED3800D187CB /* SCVisitorView.xib */; };
+		0D32FB8A22BA13DC00D187CB /* SCCardsSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D32FB8922BA13DC00D187CB /* SCCardsSelectionView.swift */; };
+		0D32FB8E22BA142200D187CB /* SCCardsSelectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D32FB8D22BA142200D187CB /* SCCardsSelectionView.xib */; };
 		0D5654EC22B8648500406055 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5654EB22B8648500406055 /* AppDelegate.swift */; };
 		0D5654F322B8648600406055 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D5654F222B8648600406055 /* Assets.xcassets */; };
 		0D5654F622B8648600406055 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D5654F422B8648600406055 /* LaunchScreen.storyboard */; };
@@ -42,8 +49,6 @@
 		0D56556922B8659700406055 /* UILabel+SCAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D56554522B8659700406055 /* UILabel+SCAddition.m */; };
 		0D56556A22B8659700406055 /* UIColor+SCAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D56554722B8659700406055 /* UIColor+SCAddition.m */; };
 		0D56557522B8693800406055 /* SCBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D56556D22B8693800406055 /* SCBaseViewController.swift */; };
-		0D56557622B8693800406055 /* SCVisitorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D56556F22B8693800406055 /* SCVisitorView.xib */; };
-		0D56557722B8693800406055 /* SCVisitorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D56557022B8693800406055 /* SCVisitorView.swift */; };
 		0D56557822B8693800406055 /* SCMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D56557122B8693800406055 /* SCMainViewController.swift */; };
 		0D56557922B8693800406055 /* SCOAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D56557322B8693800406055 /* SCOAuthViewController.swift */; };
 		0D56557A22B8693800406055 /* SCNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D56557422B8693800406055 /* SCNavigationViewController.swift */; };
@@ -76,6 +81,14 @@
 
 /* Begin PBXFileReference section */
 		02F1E2202841B0F08BF5A8B3 /* Pods-CardsHelper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CardsHelper.debug.xcconfig"; path = "Target Support Files/Pods-CardsHelper/Pods-CardsHelper.debug.xcconfig"; sourceTree = "<group>"; };
+		0D32FB7322B9A72900D187CB /* main.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = main.json; sourceTree = "<group>"; };
+		0D32FB7A22B9B3FD00D187CB /* OPTIBelwe-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OPTIBelwe-Medium.otf"; sourceTree = "<group>"; };
+		0D32FB8022B9C36C00D187CB /* MXCornerRadius.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXCornerRadius.h; sourceTree = "<group>"; };
+		0D32FB8122B9C36C00D187CB /* MXCornerRadius.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXCornerRadius.m; sourceTree = "<group>"; };
+		0D32FB8522B9ED3700D187CB /* SCVisitorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCVisitorView.swift; sourceTree = "<group>"; };
+		0D32FB8622B9ED3800D187CB /* SCVisitorView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SCVisitorView.xib; sourceTree = "<group>"; };
+		0D32FB8922BA13DC00D187CB /* SCCardsSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCCardsSelectionView.swift; sourceTree = "<group>"; };
+		0D32FB8D22BA142200D187CB /* SCCardsSelectionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SCCardsSelectionView.xib; sourceTree = "<group>"; };
 		0D5654E822B8648500406055 /* CardsHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CardsHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D5654EB22B8648500406055 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0D5654F222B8648600406055 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -127,8 +140,6 @@
 		0D56554B22B8659700406055 /* NSString+SCAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SCAddition.h"; sourceTree = "<group>"; };
 		0D56556B22B865C000406055 /* Helper-Bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Helper-Bridge.h"; sourceTree = "<group>"; };
 		0D56556D22B8693800406055 /* SCBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCBaseViewController.swift; sourceTree = "<group>"; };
-		0D56556F22B8693800406055 /* SCVisitorView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SCVisitorView.xib; sourceTree = "<group>"; };
-		0D56557022B8693800406055 /* SCVisitorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCVisitorView.swift; sourceTree = "<group>"; };
 		0D56557122B8693800406055 /* SCMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCMainViewController.swift; sourceTree = "<group>"; };
 		0D56557322B8693800406055 /* SCOAuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCOAuthViewController.swift; sourceTree = "<group>"; };
 		0D56557422B8693800406055 /* SCNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCNavigationViewController.swift; sourceTree = "<group>"; };
@@ -169,6 +180,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D32FB7922B9B3EA00D187CB /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				0D32FB7A22B9B3FD00D187CB /* OPTIBelwe-Medium.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		0D32FB7F22B9C36C00D187CB /* MXCornerRadius */ = {
+			isa = PBXGroup;
+			children = (
+				0D32FB8022B9C36C00D187CB /* MXCornerRadius.h */,
+				0D32FB8122B9C36C00D187CB /* MXCornerRadius.m */,
+			);
+			path = MXCornerRadius;
+			sourceTree = "<group>";
+		};
 		0D5654DF22B8648500406055 = {
 			isa = PBXGroup;
 			children = (
@@ -244,6 +272,8 @@
 		0D56551B22B8650C00406055 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				0D32FB7F22B9C36C00D187CB /* MXCornerRadius */,
+				0D32FB7922B9B3EA00D187CB /* Fonts */,
 				0D56553A22B8659700406055 /* Additions */,
 				0D56551E22B8659700406055 /* Extensions */,
 				0D56553222B8659700406055 /* FFLabel */,
@@ -350,6 +380,7 @@
 		0D56556C22B8680700406055 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				0D32FB7322B9A72900D187CB /* main.json */,
 				0D56557222B8693800406055 /* OAuth */,
 				0D56556D22B8693800406055 /* SCBaseViewController.swift */,
 				0D56557122B8693800406055 /* SCMainViewController.swift */,
@@ -362,8 +393,8 @@
 		0D56556E22B8693800406055 /* VisitorView */ = {
 			isa = PBXGroup;
 			children = (
-				0D56556F22B8693800406055 /* SCVisitorView.xib */,
-				0D56557022B8693800406055 /* SCVisitorView.swift */,
+				0D32FB8522B9ED3700D187CB /* SCVisitorView.swift */,
+				0D32FB8622B9ED3800D187CB /* SCVisitorView.xib */,
 			);
 			path = VisitorView;
 			sourceTree = "<group>";
@@ -388,6 +419,8 @@
 			isa = PBXGroup;
 			children = (
 				0D56558622B8877400406055 /* SCCardsViewController.swift */,
+				0D32FB8922BA13DC00D187CB /* SCCardsSelectionView.swift */,
+				0D32FB8D22BA142200D187CB /* SCCardsSelectionView.xib */,
 			);
 			path = Cards;
 			sourceTree = "<group>";
@@ -541,8 +574,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D5654F622B8648600406055 /* LaunchScreen.storyboard in Resources */,
-				0D56557622B8693800406055 /* SCVisitorView.xib in Resources */,
+				0D32FB7C22B9B41100D187CB /* OPTIBelwe-Medium.otf in Resources */,
+				0D32FB7422B9A72900D187CB /* main.json in Resources */,
 				0D5654F322B8648600406055 /* Assets.xcassets in Resources */,
+				0D32FB8822B9ED3800D187CB /* SCVisitorView.xib in Resources */,
+				0D32FB8E22BA142200D187CB /* SCCardsSelectionView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -637,9 +673,11 @@
 				0D56558122B86D1F00406055 /* SCUserAccount.swift in Sources */,
 				0D56556A22B8659700406055 /* UIColor+SCAddition.m in Sources */,
 				0D56555822B8659700406055 /* UIViewController+extension.swift in Sources */,
+				0D32FB8222B9C36C00D187CB /* MXCornerRadius.m in Sources */,
 				0D56558722B8877400406055 /* SCCardsViewController.swift in Sources */,
 				0D56557522B8693800406055 /* SCBaseViewController.swift in Sources */,
 				0D56557A22B8693800406055 /* SCNavigationViewController.swift in Sources */,
+				0D32FB8A22BA13DC00D187CB /* SCCardsSelectionView.swift in Sources */,
 				0D56556522B8659700406055 /* UIImageView+SCAddition.m in Sources */,
 				0D56555A22B8659700406055 /* UITableViewCell+extension.swift in Sources */,
 				0D56557822B8693800406055 /* SCMainViewController.swift in Sources */,
@@ -647,7 +685,7 @@
 				0D56555F22B8659700406055 /* FFLabel.swift in Sources */,
 				0D56556922B8659700406055 /* UILabel+SCAddition.m in Sources */,
 				0D56554F22B8659700406055 /* UIFont+extension.swift in Sources */,
-				0D56557722B8693800406055 /* SCVisitorView.swift in Sources */,
+				0D32FB8722B9ED3800D187CB /* SCVisitorView.swift in Sources */,
 				0D56556722B8659700406055 /* UIScreen+UISCreen_extenshion.m in Sources */,
 				0D56555E22B8659700406055 /* UITableView+extension.swift in Sources */,
 				0D56555322B8659700406055 /* UIView+extension.swift in Sources */,

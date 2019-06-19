@@ -9,11 +9,13 @@
 import UIKit
 
 class SCCardsViewController: SCBaseViewController {
+    private lazy var cardsView = SCCardsSelectionView.cardsSelectionView()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
-    
+    override func setupUserView() {
+        super.setupUserView()
+        view.addSubview(cardsView)
+    }
 }

@@ -18,4 +18,5 @@ struct HelperCommonValues {
     static let SCBaseViewBackgroundColor = UIColor(displayP3Red: 230.0 / 255, green: 215.0 / 255, blue: 176.0 / 255, alpha: 1.0)
     static let SCNaviBarColor = UIColor(displayP3Red: 82.0 / 255, green: 66.0 / 255, blue: 51.0 / 255, alpha: 1.0)
     static let SCNaviBarTintColor = UIColor(displayP3Red: 247.0 / 255, green: 209.0 / 255, blue: 95.0 / 255, alpha: 1.0)
+    static let SCNaviBarBackColor = UIColor(displayP3Red: 68.0 / 255, green: 68.0 / 255, blue: 68.0 / 255, alpha: 1.0)
 }

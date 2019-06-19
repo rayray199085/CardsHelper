@@ -34,6 +34,7 @@ class SCMainViewController: UITabBarController {
     @objc private func handleLoginNotification(notification: Notification){
         let nav = UINavigationController(rootViewController: SCOAuthViewController())
         nav.navigationBar.barTintColor = HelperCommonValues.SCNaviBarColor
+        nav.navigationBar.isTranslucent = false
         present(nav, animated: true, completion: nil)
     }
 }
@@ -41,13 +42,11 @@ private extension SCMainViewController{
     
     /// setup child controllers by initializing an array of dictionary
     func setupChildControllers(){
-        let array = [
-        ["title": "Cards","clsName":"SCCardsViewController","imageName":"profile",
-         "visitorInfo":["imageName":"visitor_01","message":"Sync with your game account."]],
-        ["title": "Deck","clsName":"SCDeckViewController","imageName":"followers",
-         "visitorInfo":["imageName":"visitor_02","message":"Lastest game information."]],
-        ["title": "News","clsName":"SCNewsViewController","imageName":"news"],
-        ["title": "More","clsName":"SCMoreViewController","imageName":"more"]]
+        guard let path = Bundle.main.path(forResource: "main", ofType: "json"),
+             let data = try? Data(contentsOf: URL(fileURLWithPath: path)),
+            let array = try? JSONSerialization.jsonObject(with: data, options: []) as? [[String: Any]] else{
+                return
+        }
         var childControllers = [UIViewController]()
         for dict in array{
             childControllers.append(getController(dict: dict))
@@ -76,7 +75,7 @@ private extension SCMainViewController{
         vc.tabBarItem.setTitleTextAttributes(
             [NSAttributedString.Key.foregroundColor : HelperCommonValues.SCNaviBarTintColor],
             for: UIControl.State.highlighted)
-        vc.tabBarItem.setTitleTextAttributes([NSAttributedString.Key.foregroundColor : UIColor.lightGray,NSAttributedString.Key.font: UIFont.systemFont(ofSize: 11.0)], for: [])
+        vc.tabBarItem.setTitleTextAttributes([NSAttributedString.Key.foregroundColor : UIColor.lightGray,NSAttributedString.Key.font: UIFont(name: "OPTIBelwe-Medium", size: 11)!], for: [])
         if let visitorInfo = dict["visitorInfo"] as? [String: String]{
             if vc.isKind(of: SCBaseViewController.self){
                 (vc as! SCBaseViewController).visitorInfo = visitorInfo

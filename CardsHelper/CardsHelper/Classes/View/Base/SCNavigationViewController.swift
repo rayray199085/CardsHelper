@@ -14,8 +14,7 @@ class SCNavigationViewController: UINavigationController {
         super.viewDidLoad()
         allowSwipeToGoBack()
         navigationBar.barTintColor = HelperCommonValues.SCNaviBarColor
-        navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: HelperCommonValues.SCNaviBarTintColor, NSAttributedString.Key.font:  UIFont.systemFont(ofSize: 18.0)]
-
+        navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: HelperCommonValues.SCNaviBarTintColor, NSAttributedString.Key.font:  UIFont(name: "OPTIBelwe-Medium", size: 20)!]
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)

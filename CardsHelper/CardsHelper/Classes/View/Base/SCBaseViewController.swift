@@ -34,10 +34,10 @@ class SCBaseViewController: UIViewController {
         super.viewDidLoad()
         setupUI()
         SCNetworkManager.shared.userLogon ? loadData() :()
-        NotificationCenter.default.addObserver(self, selector: #selector(successLogin), name: NSNotification.Name(HelperCommonValues.SCUserShouldLoginNotification), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(successLogin), name: NSNotification.Name(HelperCommonValues.SCUserSuccessLoginNotification), object: nil)
     }
     deinit {
-        NotificationCenter.default.removeObserver(self, name: NSNotification.Name(HelperCommonValues.SCUserShouldLoginNotification), object: self)
+        NotificationCenter.default.removeObserver(self, name: NSNotification.Name(HelperCommonValues.SCUserSuccessLoginNotification), object: self)
     }
     @objc func loadData(){
         
@@ -56,7 +56,7 @@ extension SCBaseViewController{
         navigationItem.rightBarButtonItem = nil
         navigationItem.leftBarButtonItem = nil
         view = nil
-        NotificationCenter.default.removeObserver(self, name: NSNotification.Name(HelperCommonValues.SCUserShouldLoginNotification), object: nil)
+        NotificationCenter.default.removeObserver(self, name: NSNotification.Name(HelperCommonValues.SCUserSuccessLoginNotification), object: nil)
     }
 }
 
@@ -92,6 +92,10 @@ extension SCBaseViewController{
         // init region value is us
         userDefault.set(regionName, forKey: "region")
         dropDown.anchorView = regionBarButtonItem
+        dropDown.textColor = HelperCommonValues.SCNaviBarTintColor
+        dropDown.backgroundColor = HelperCommonValues.SCNaviBarColor
+        dropDown.cornerRadius = 10.0
+        dropDown.selectionBackgroundColor = UIColor.lightGray
         dropDown.dataSource = ["🇺🇸US", "🇪🇺EU", "🇦🇺APAC"]
         dropDown.width = 100
         dropDown.selectionAction = { [unowned self] (index: Int, item: String) in
@@ -102,7 +106,6 @@ extension SCBaseViewController{
             self.userDefault.set(self.regionName, forKey: "region")
             btn.setTitle(item, for: [])
             btn.sizeToFit()
-            
         }
     }
 }

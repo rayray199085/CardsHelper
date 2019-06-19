@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OPTIBelwe-Medium.otf">
+            <string>OPTIBelwe-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SCCardsSelectionView" customModule="CardsHelper" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="whole_selection_bg" translatesAutoresizingMaskIntoConstraints="NO" id="PC9-es-o2W">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="4x2-5j-gpD">
+                    <rect key="frame" x="10" y="252" width="132" height="392"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7dJ-f8-wXy">
+                            <rect key="frame" x="0.0" y="0.0" width="132" height="42"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="42" id="EKq-cJ-vgH"/>
+                                <constraint firstAttribute="width" constant="132" id="uti-Rq-YAP"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="OPTIBelwe-Medium" family="OPTIBelwe-Medium" pointSize="20"/>
+                            <state key="normal" title="All Cards" backgroundImage="selection_btn">
+                                <color key="titleColor" red="0.36184719204902649" green="0.26824721693992615" blue="0.16857632994651794" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </state>
+                            <state key="selected" backgroundImage="selection_btn_highlighted"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="66d-XW-Z9l">
+                            <rect key="frame" x="0.0" y="50" width="132" height="42"/>
+                            <fontDescription key="fontDescription" name="OPTIBelwe-Medium" family="OPTIBelwe-Medium" pointSize="20"/>
+                            <state key="normal" title="All Classes" backgroundImage="selection_btn">
+                                <color key="titleColor" red="0.36184719204902649" green="0.26824721693992615" blue="0.16857632994651794" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </state>
+                            <state key="selected" backgroundImage="selection_btn_highlighted"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CsK-WL-YYo">
+                            <rect key="frame" x="0.0" y="100" width="132" height="42"/>
+                            <fontDescription key="fontDescription" name="OPTIBelwe-Medium" family="OPTIBelwe-Medium" pointSize="20"/>
+                            <state key="normal" title="Attack" backgroundImage="selection_btn">
+                                <color key="titleColor" red="0.36184719204902649" green="0.26824721693992615" blue="0.16857632994651794" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </state>
+                            <state key="selected" backgroundImage="selection_btn_highlighted"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SPG-WY-pIm">
+                            <rect key="frame" x="0.0" y="150" width="132" height="42"/>
+                            <fontDescription key="fontDescription" name="OPTIBelwe-Medium" family="OPTIBelwe-Medium" pointSize="20"/>
+                            <state key="normal" title="Health" backgroundImage="selection_btn">
+                                <color key="titleColor" red="0.36184719204902649" green="0.26824721693992615" blue="0.16857632994651794" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </state>
+                            <state key="selected" backgroundImage="selection_btn_highlighted"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zN3-Vg-Dka">
+                            <rect key="frame" x="0.0" y="200" width="132" height="42"/>
+                            <fontDescription key="fontDescription" name="OPTIBelwe-Medium" family="OPTIBelwe-Medium" pointSize="20"/>
+                            <state key="normal" title="Card Type" backgroundImage="selection_btn">
+                                <color key="titleColor" red="0.36184719204902649" green="0.26824721693992615" blue="0.16857632994651794" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </state>
+                            <state key="selected" backgroundImage="selection_btn_highlighted"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Os-Iw-VsD">
+                            <rect key="frame" x="0.0" y="250" width="132" height="42"/>
+                            <fontDescription key="fontDescription" name="OPTIBelwe-Medium" family="OPTIBelwe-Medium" pointSize="20"/>
+                            <state key="normal" title="Rarity" backgroundImage="selection_btn">
+                                <color key="titleColor" red="0.36184719204902649" green="0.26824721693992615" blue="0.16857632994651794" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </state>
+                            <state key="selected" backgroundImage="selection_btn_highlighted"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vU2-Av-tNi">
+                            <rect key="frame" x="0.0" y="300" width="132" height="42"/>
+                            <fontDescription key="fontDescription" name="OPTIBelwe-Medium" family="OPTIBelwe-Medium" pointSize="20"/>
+                            <state key="normal" title="Minion Type" backgroundImage="selection_btn">
+                                <color key="titleColor" red="0.36184719204902649" green="0.26824721693992615" blue="0.16857632994651794" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </state>
+                            <state key="selected" backgroundImage="selection_btn_highlighted"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eq8-I0-xQy">
+                            <rect key="frame" x="0.0" y="350" width="132" height="42"/>
+                            <fontDescription key="fontDescription" name="OPTIBelwe-Medium" family="OPTIBelwe-Medium" pointSize="20"/>
+                            <state key="normal" title="Keywords" backgroundImage="selection_btn">
+                                <color key="titleColor" red="0.36184719204902649" green="0.26824721693992615" blue="0.16857632994651794" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </state>
+                            <state key="selected" backgroundImage="selection_btn_highlighted"/>
+                        </button>
+                    </subviews>
+                </stackView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="keywords_search" translatesAutoresizingMaskIntoConstraints="NO" id="ARd-hK-Aa1">
+                    <rect key="frame" x="10" y="59" width="219" height="63"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="219" id="4jB-Ka-vGZ"/>
+                        <constraint firstAttribute="height" constant="63" id="fLK-A4-xP1"/>
+                    </constraints>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="magnifier" translatesAutoresizingMaskIntoConstraints="NO" id="xzz-7t-3Jg">
+                    <rect key="frame" x="27" y="69.5" width="42" height="42"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="42" id="f7t-zi-94z"/>
+                        <constraint firstAttribute="height" constant="42" id="rKl-Xh-iGI"/>
+                    </constraints>
+                </imageView>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="aaaa" borderStyle="roundedRect" placeholder="Search" textAlignment="natural" minimumFontSize="25" translatesAutoresizingMaskIntoConstraints="NO" id="Trq-Pm-RXV">
+                    <rect key="frame" x="69" y="69.5" width="140" height="42"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="140" id="Iiq-lA-d7n"/>
+                        <constraint firstAttribute="height" constant="42" id="Mgv-7J-HYM"/>
+                    </constraints>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" name="OPTIBelwe-Medium" family="OPTIBelwe-Medium" pointSize="25"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" red="0.32156862745098036" green="0.25882352941176467" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="PC9-es-o2W" secondAttribute="bottom" id="4pr-43-tfJ"/>
+                <constraint firstItem="Trq-Pm-RXV" firstAttribute="leading" secondItem="xzz-7t-3Jg" secondAttribute="trailing" id="6or-Om-YDf"/>
+                <constraint firstItem="Trq-Pm-RXV" firstAttribute="centerY" secondItem="xzz-7t-3Jg" secondAttribute="centerY" id="9qp-jv-FLT"/>
+                <constraint firstItem="ARd-hK-Aa1" firstAttribute="leading" secondItem="PC9-es-o2W" secondAttribute="leading" constant="10" id="B6a-QH-gmq"/>
+                <constraint firstItem="xzz-7t-3Jg" firstAttribute="leading" secondItem="ARd-hK-Aa1" secondAttribute="leading" constant="17" id="FaP-4b-8Mj"/>
+                <constraint firstItem="PC9-es-o2W" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="GXM-KL-gGD"/>
+                <constraint firstItem="PC9-es-o2W" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="GuC-WO-ywH"/>
+                <constraint firstItem="ARd-hK-Aa1" firstAttribute="top" secondItem="PC9-es-o2W" secondAttribute="top" constant="15" id="VtG-EV-kBU"/>
+                <constraint firstItem="4x2-5j-gpD" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="tf5-Np-d1d"/>
+                <constraint firstItem="PC9-es-o2W" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="ueh-Yr-rNw"/>
+                <constraint firstItem="xzz-7t-3Jg" firstAttribute="centerY" secondItem="ARd-hK-Aa1" secondAttribute="centerY" id="z51-W7-HyD"/>
+                <constraint firstItem="4x2-5j-gpD" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="zrt-VZ-y8X"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="92.753623188405811" y="100.44642857142857"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="keywords_search" width="68" height="21"/>
+        <image name="magnifier" width="21" height="21.5"/>
+        <image name="selection_btn" width="65.5" height="21"/>
+        <image name="selection_btn_highlighted" width="67.5" height="23"/>
+        <image name="whole_selection_bg" width="159.5" height="160"/>
+    </resources>
+</document>

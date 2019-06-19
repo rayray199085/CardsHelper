@@ -29,7 +29,7 @@ class SCNewsViewController: UIViewController {
 }
 private extension SCNewsViewController{
     func setupUI(){
-        navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor : HelperCommonValues.SCNaviBarTintColor, NSAttributedString.Key.font: UIFont.systemFont(ofSize: 18.0)]
+//        navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor : HelperCommonValues.SCNaviBarTintColor, NSAttributedString.Key.font: UIFont.systemFont(ofSize: 18.0)]
     }
     func loadWebView(){
         let urlString = "https://playhearthstone.com/en-us/blog/"

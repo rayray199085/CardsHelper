@@ -18,7 +18,6 @@ extension SCNetworkManager{
         guard let region = UserDefaults.standard.object(forKey: "region") as? String else{
             return
         }
-        print(region)
         let urlString = "https://\(region).battle.net/oauth/token"
         let params = ["client_id": HelperCommonValues.SCClientId,
                       "client_secret": HelperCommonValues.SCClientSecret,
@@ -26,13 +25,13 @@ extension SCNetworkManager{
                       "code":code,
                       "redirect_uri": HelperCommonValues.SCRedirectURL]
        
-        request(urlString: urlString, method: HTTPMethod.post, params: params) { (res, isSuccess, statusCode, error) in
+        request(urlString: urlString, method: HTTPMethod.post, params: params) { [weak self](res, isSuccess, statusCode, error) in
             guard let tokenDict = res as? [String: Any] else{
                 completion(false)
                 return
             }
-            self.userAccount.yy_modelSet(with: tokenDict)
-            self.userAccount.saveUserInfo()
+            self?.userAccount.yy_modelSet(with: tokenDict)
+            self?.userAccount.saveUserInfo()
             SVProgressHUD.showInfo(withStatus: "Login Success!")
             DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.5, execute: {
                 completion(isSuccess)
