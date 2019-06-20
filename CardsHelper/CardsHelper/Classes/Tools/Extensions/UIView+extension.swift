@@ -48,6 +48,19 @@ extension UIView{
         layer.pop_add(anim, forKey: nil)
     }
     
+    func addPopHorizontalAnimation(fromValue: CGFloat, toValue: CGFloat, springBounciness: CGFloat = 6, springSpeed: CGFloat = 12,delay: Double = 0, completionBlock:((POPAnimation?, Bool) -> Void)? = nil){
+        let anim = POPSpringAnimation(propertyNamed: kPOPLayerPositionX)
+        anim?.fromValue = fromValue
+        anim?.toValue = toValue
+        anim?.springBounciness = springBounciness
+        anim?.springSpeed = springSpeed
+        anim?.beginTime = CACurrentMediaTime() + CFTimeInterval(delay)
+        anim?.completionBlock = completionBlock
+        layer.pop_add(anim, forKey: nil)
+    }
+    
+    
+    
     /// Add pop scaleXY animation
     ///
     /// - Parameters:

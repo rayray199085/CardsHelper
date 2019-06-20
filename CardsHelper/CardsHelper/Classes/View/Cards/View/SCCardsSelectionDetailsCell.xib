@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OPTIBelwe-Medium.otf">
+            <string>OPTIBelwe-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="42" id="DB1-A5-elo" customClass="SCCardsSelectionDetailsCell" customModule="CardsHelper" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="42"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="DB1-A5-elo" id="Yo5-hS-QHk">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="41.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jNm-tf-JZc">
+                        <rect key="frame" x="0.0" y="-0.5" width="414" height="42.5"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="42" id="XW2-Nc-nlo"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="OPTIBelwe-Medium" family="OPTIBelwe-Medium" pointSize="17"/>
+                        <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <state key="normal" title="All Cards" backgroundImage="tableview_cell_bg"/>
+                        <state key="selected">
+                            <color key="titleColor" red="0.96862745100000003" green="0.81960784310000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="jNm-tf-JZc" firstAttribute="centerY" secondItem="Yo5-hS-QHk" secondAttribute="centerY" id="2xw-Ja-rWy"/>
+                    <constraint firstItem="jNm-tf-JZc" firstAttribute="leading" secondItem="Yo5-hS-QHk" secondAttribute="leading" id="kZl-UO-fGR"/>
+                    <constraint firstAttribute="trailing" secondItem="jNm-tf-JZc" secondAttribute="trailing" id="wtk-St-iu8"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="detailsButton" destination="jNm-tf-JZc" id="5jL-SB-yBa"/>
+            </connections>
+            <point key="canvasLocation" x="108.69565217391305" y="126.22767857142857"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="tableview_cell_bg" width="751.5" height="36.5"/>
+    </resources>
+</document>

@@ -59,6 +59,20 @@
 		0D56558922B887A300406055 /* SCDeckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D56558822B887A300406055 /* SCDeckViewController.swift */; };
 		0D56558B22B887BF00406055 /* SCNewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D56558A22B887BF00406055 /* SCNewsViewController.swift */; };
 		0D56558D22B887D100406055 /* SCMoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D56558C22B887D100406055 /* SCMoreViewController.swift */; };
+		0DD10E8822BAFA8600DC77D1 /* SCCardsSelectionOptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD10E8722BAFA8600DC77D1 /* SCCardsSelectionOptionCell.swift */; };
+		0DD10E8A22BAFAA500DC77D1 /* SCCardsSelectionOptionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DD10E8922BAFAA500DC77D1 /* SCCardsSelectionOptionCell.xib */; };
+		0DD10E8C22BB137600DC77D1 /* SCCardsSelectionDetailsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD10E8B22BB137600DC77D1 /* SCCardsSelectionDetailsCell.swift */; };
+		0DD10E8E22BB139500DC77D1 /* SCCardsSelectionDetailsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DD10E8D22BB139500DC77D1 /* SCCardsSelectionDetailsCell.xib */; };
+		0DD10E9122BB1B3E00DC77D1 /* SCMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD10E9022BB1B3E00DC77D1 /* SCMetadata.swift */; };
+		0DD10E9322BB1C0F00DC77D1 /* SCMetadataSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD10E9222BB1C0F00DC77D1 /* SCMetadataSet.swift */; };
+		0DD10E9522BB1CD200DC77D1 /* SCMetadataSetGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD10E9422BB1CD200DC77D1 /* SCMetadataSetGroup.swift */; };
+		0DD10E9722BB1DEA00DC77D1 /* SCMetadataType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD10E9622BB1DEA00DC77D1 /* SCMetadataType.swift */; };
+		0DD10E9922BB1E6600DC77D1 /* SCMetadataRarity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD10E9822BB1E6600DC77D1 /* SCMetadataRarity.swift */; };
+		0DD10E9B22BB1F1A00DC77D1 /* SCMetadaClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD10E9A22BB1F1A00DC77D1 /* SCMetadaClass.swift */; };
+		0DD10E9D22BB1FA500DC77D1 /* SCMetadataMinionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD10E9C22BB1FA500DC77D1 /* SCMetadataMinionType.swift */; };
+		0DD10E9F22BB203B00DC77D1 /* SCMetadataKeyword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD10E9E22BB203B00DC77D1 /* SCMetadataKeyword.swift */; };
+		0DD10EA322BB216D00DC77D1 /* SCCardsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD10EA222BB216D00DC77D1 /* SCCardsViewModel.swift */; };
+		0DD10EA522BB473000DC77D1 /* SCMetadataBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD10EA422BB473000DC77D1 /* SCMetadataBase.swift */; };
 		B004CE49FC4C71CDCF2C0A93 /* Pods_CardsHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77A5AD8E8E6505E174A88D93 /* Pods_CardsHelper.framework */; };
 /* End PBXBuildFile section */
 
@@ -150,6 +164,20 @@
 		0D56558822B887A300406055 /* SCDeckViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCDeckViewController.swift; sourceTree = "<group>"; };
 		0D56558A22B887BF00406055 /* SCNewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCNewsViewController.swift; sourceTree = "<group>"; };
 		0D56558C22B887D100406055 /* SCMoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCMoreViewController.swift; sourceTree = "<group>"; };
+		0DD10E8722BAFA8600DC77D1 /* SCCardsSelectionOptionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCCardsSelectionOptionCell.swift; sourceTree = "<group>"; };
+		0DD10E8922BAFAA500DC77D1 /* SCCardsSelectionOptionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SCCardsSelectionOptionCell.xib; sourceTree = "<group>"; };
+		0DD10E8B22BB137600DC77D1 /* SCCardsSelectionDetailsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCCardsSelectionDetailsCell.swift; sourceTree = "<group>"; };
+		0DD10E8D22BB139500DC77D1 /* SCCardsSelectionDetailsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SCCardsSelectionDetailsCell.xib; sourceTree = "<group>"; };
+		0DD10E9022BB1B3E00DC77D1 /* SCMetadata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCMetadata.swift; sourceTree = "<group>"; };
+		0DD10E9222BB1C0F00DC77D1 /* SCMetadataSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCMetadataSet.swift; sourceTree = "<group>"; };
+		0DD10E9422BB1CD200DC77D1 /* SCMetadataSetGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCMetadataSetGroup.swift; sourceTree = "<group>"; };
+		0DD10E9622BB1DEA00DC77D1 /* SCMetadataType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCMetadataType.swift; sourceTree = "<group>"; };
+		0DD10E9822BB1E6600DC77D1 /* SCMetadataRarity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCMetadataRarity.swift; sourceTree = "<group>"; };
+		0DD10E9A22BB1F1A00DC77D1 /* SCMetadaClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCMetadaClass.swift; sourceTree = "<group>"; };
+		0DD10E9C22BB1FA500DC77D1 /* SCMetadataMinionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCMetadataMinionType.swift; sourceTree = "<group>"; };
+		0DD10E9E22BB203B00DC77D1 /* SCMetadataKeyword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCMetadataKeyword.swift; sourceTree = "<group>"; };
+		0DD10EA222BB216D00DC77D1 /* SCCardsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCCardsViewModel.swift; sourceTree = "<group>"; };
+		0DD10EA422BB473000DC77D1 /* SCMetadataBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCMetadataBase.swift; sourceTree = "<group>"; };
 		3D1D58AD7AE9EF85C4A9BA2A /* Pods-CardsHelper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CardsHelper.release.xcconfig"; path = "Target Support Files/Pods-CardsHelper/Pods-CardsHelper.release.xcconfig"; sourceTree = "<group>"; };
 		77A5AD8E8E6505E174A88D93 /* Pods_CardsHelper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CardsHelper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -265,6 +293,7 @@
 		0D56551A22B8650C00406055 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				0DD10EA222BB216D00DC77D1 /* SCCardsViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -272,12 +301,12 @@
 		0D56551B22B8650C00406055 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				0D56553522B8659700406055 /* Network */,
 				0D32FB7F22B9C36C00D187CB /* MXCornerRadius */,
 				0D32FB7922B9B3EA00D187CB /* Fonts */,
 				0D56553A22B8659700406055 /* Additions */,
 				0D56551E22B8659700406055 /* Extensions */,
 				0D56553222B8659700406055 /* FFLabel */,
-				0D56553522B8659700406055 /* Network */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -285,6 +314,7 @@
 		0D56551C22B8650C00406055 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				0DD10E8F22BB1B1100DC77D1 /* Cards */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -418,9 +448,8 @@
 		0D56558222B8872700406055 /* Cards */ = {
 			isa = PBXGroup;
 			children = (
+				0DD10E8622BAFA4600DC77D1 /* View */,
 				0D56558622B8877400406055 /* SCCardsViewController.swift */,
-				0D32FB8922BA13DC00D187CB /* SCCardsSelectionView.swift */,
-				0D32FB8D22BA142200D187CB /* SCCardsSelectionView.xib */,
 			);
 			path = Cards;
 			sourceTree = "<group>";
@@ -447,6 +476,35 @@
 				0D56558C22B887D100406055 /* SCMoreViewController.swift */,
 			);
 			path = More;
+			sourceTree = "<group>";
+		};
+		0DD10E8622BAFA4600DC77D1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0D32FB8922BA13DC00D187CB /* SCCardsSelectionView.swift */,
+				0D32FB8D22BA142200D187CB /* SCCardsSelectionView.xib */,
+				0DD10E8722BAFA8600DC77D1 /* SCCardsSelectionOptionCell.swift */,
+				0DD10E8922BAFAA500DC77D1 /* SCCardsSelectionOptionCell.xib */,
+				0DD10E8B22BB137600DC77D1 /* SCCardsSelectionDetailsCell.swift */,
+				0DD10E8D22BB139500DC77D1 /* SCCardsSelectionDetailsCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0DD10E8F22BB1B1100DC77D1 /* Cards */ = {
+			isa = PBXGroup;
+			children = (
+				0DD10E9022BB1B3E00DC77D1 /* SCMetadata.swift */,
+				0DD10E9222BB1C0F00DC77D1 /* SCMetadataSet.swift */,
+				0DD10E9422BB1CD200DC77D1 /* SCMetadataSetGroup.swift */,
+				0DD10E9622BB1DEA00DC77D1 /* SCMetadataType.swift */,
+				0DD10E9822BB1E6600DC77D1 /* SCMetadataRarity.swift */,
+				0DD10E9A22BB1F1A00DC77D1 /* SCMetadaClass.swift */,
+				0DD10E9C22BB1FA500DC77D1 /* SCMetadataMinionType.swift */,
+				0DD10E9E22BB203B00DC77D1 /* SCMetadataKeyword.swift */,
+				0DD10EA422BB473000DC77D1 /* SCMetadataBase.swift */,
+			);
+			path = Cards;
 			sourceTree = "<group>";
 		};
 		1BD0E1AAA66DC422442ADB7E /* Frameworks */ = {
@@ -577,8 +635,10 @@
 				0D32FB7C22B9B41100D187CB /* OPTIBelwe-Medium.otf in Resources */,
 				0D32FB7422B9A72900D187CB /* main.json in Resources */,
 				0D5654F322B8648600406055 /* Assets.xcassets in Resources */,
+				0DD10E8A22BAFAA500DC77D1 /* SCCardsSelectionOptionCell.xib in Resources */,
 				0D32FB8822B9ED3800D187CB /* SCVisitorView.xib in Resources */,
 				0D32FB8E22BA142200D187CB /* SCCardsSelectionView.xib in Resources */,
+				0DD10E8E22BB139500DC77D1 /* SCCardsSelectionDetailsCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -669,6 +729,9 @@
 				0D56556022B8659700406055 /* SCNetworkManager.swift in Sources */,
 				0D56556622B8659700406055 /* NSString+SCAddition.m in Sources */,
 				0D56555C22B8659700406055 /* UIPageControl+extension.swift in Sources */,
+				0DD10E9122BB1B3E00DC77D1 /* SCMetadata.swift in Sources */,
+				0DD10E8C22BB137600DC77D1 /* SCCardsSelectionDetailsCell.swift in Sources */,
+				0DD10E9922BB1E6600DC77D1 /* SCMetadataRarity.swift in Sources */,
 				0D56556822B8659700406055 /* CABasicAnimation+SCAddition.m in Sources */,
 				0D56558122B86D1F00406055 /* SCUserAccount.swift in Sources */,
 				0D56556A22B8659700406055 /* UIColor+SCAddition.m in Sources */,
@@ -680,22 +743,29 @@
 				0D32FB8A22BA13DC00D187CB /* SCCardsSelectionView.swift in Sources */,
 				0D56556522B8659700406055 /* UIImageView+SCAddition.m in Sources */,
 				0D56555A22B8659700406055 /* UITableViewCell+extension.swift in Sources */,
+				0DD10E9722BB1DEA00DC77D1 /* SCMetadataType.swift in Sources */,
 				0D56557822B8693800406055 /* SCMainViewController.swift in Sources */,
 				0D56554C22B8659700406055 /* UIApplication+extension.swift in Sources */,
+				0DD10E9B22BB1F1A00DC77D1 /* SCMetadaClass.swift in Sources */,
 				0D56555F22B8659700406055 /* FFLabel.swift in Sources */,
 				0D56556922B8659700406055 /* UILabel+SCAddition.m in Sources */,
 				0D56554F22B8659700406055 /* UIFont+extension.swift in Sources */,
+				0DD10E9522BB1CD200DC77D1 /* SCMetadataSetGroup.swift in Sources */,
 				0D32FB8722B9ED3800D187CB /* SCVisitorView.swift in Sources */,
 				0D56556722B8659700406055 /* UIScreen+UISCreen_extenshion.m in Sources */,
 				0D56555E22B8659700406055 /* UITableView+extension.swift in Sources */,
 				0D56555322B8659700406055 /* UIView+extension.swift in Sources */,
 				0D56554E22B8659700406055 /* NSAttributedString+extension.swift in Sources */,
 				0D56555B22B8659700406055 /* WKWebView+extension.swift in Sources */,
+				0DD10EA522BB473000DC77D1 /* SCMetadataBase.swift in Sources */,
 				0D56555422B8659700406055 /* UIImage+extension.swift in Sources */,
 				0D56556322B8659700406055 /* UIButton+SCAddition.m in Sources */,
 				0D56555622B8659700406055 /* Bundle+extension.swift in Sources */,
+				0DD10EA322BB216D00DC77D1 /* SCCardsViewModel.swift in Sources */,
 				0D56555D22B8659700406055 /* UIBarButtonItem+extension.swift in Sources */,
+				0DD10E9322BB1C0F00DC77D1 /* SCMetadataSet.swift in Sources */,
 				0D56555722B8659700406055 /* UITabBarController+extension.swift in Sources */,
+				0DD10E8822BAFA8600DC77D1 /* SCCardsSelectionOptionCell.swift in Sources */,
 				0D56554D22B8659700406055 /* UIImageView+extension.swift in Sources */,
 				0D56558B22B887BF00406055 /* SCNewsViewController.swift in Sources */,
 				0D56557922B8693800406055 /* SCOAuthViewController.swift in Sources */,
@@ -704,8 +774,10 @@
 				0D5654EC22B8648500406055 /* AppDelegate.swift in Sources */,
 				0D56557C22B8699C00406055 /* HelperCommonValues.swift in Sources */,
 				0D56558D22B887D100406055 /* SCMoreViewController.swift in Sources */,
+				0DD10E9F22BB203B00DC77D1 /* SCMetadataKeyword.swift in Sources */,
 				0D56555022B8659700406055 /* UIWindow+extension.swift in Sources */,
 				0D56555122B8659700406055 /* Date+extension.swift in Sources */,
+				0DD10E9D22BB1FA500DC77D1 /* SCMetadataMinionType.swift in Sources */,
 				0D56556422B8659700406055 /* NSObject+SCAddition.m in Sources */,
 				0D56557E22B86C0400406055 /* SCNetworkManager+extension.swift in Sources */,
 			);
