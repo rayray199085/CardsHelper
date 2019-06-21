@@ -10,19 +10,16 @@ import UIKit
 
 class SCCardsSelectionDetailsCell: UITableViewCell {
     @IBOutlet weak var detailsButton: UIButton!
-    var slug: String?
     var name: String?
-    var detailsItem: [String: String?]?{
+    var detailsItem: SCCardsDetailsItem?{
         didSet{
-            guard let title = detailsItem?["name"],
-                  let slug = detailsItem?["slug"] else {
+            guard let title = detailsItem?.name else {
                 return
             }
             detailsButton.titleLabel?.numberOfLines = 0
             detailsButton.titleLabel?.font = UIFont(name: "OPTIBelwe-Medium", size: 15)
             detailsButton.setTitle(title, for: [])
             name = title
-            self.slug = slug
         }
     }
     func selectedDetailsButton(){

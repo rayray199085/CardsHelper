@@ -53,5 +53,28 @@ extension SCNetworkManager{
         }
     }
 }
+extension SCNetworkManager{
+    func getCards(params: [String: String], completion:@escaping (_ dict: [String: Any]? ,_ isSuccess: Bool)->()){
+        guard let region = UserDefaults.standard.object(forKey: "region") as? String else{
+            completion(nil,false)
+            return
+        }
+        let urlString = "https://\(region).api.blizzard.com/hearthstone/cards?locale=en_US"
+        requestWithToken(urlString: urlString, method: HTTPMethod.get, params: params) { (res, isSuccess) in
+            let dict = res as? [String: Any]
+            completion(dict, isSuccess)
+        }
+    }
+    
+    func getCardImage(imageUrlString: String, completion:@escaping (_ image: UIImage?)->()){
+        guard let url = URL(string: imageUrlString) else{
+            completion(nil)
+            return
+        }
+        UIImage.downloadImage(url: url) { (image) in
+            completion(image)
+        }
+    }
+}
 
 

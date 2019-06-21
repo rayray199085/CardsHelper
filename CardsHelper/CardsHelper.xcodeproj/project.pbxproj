@@ -59,6 +59,13 @@
 		0D56558922B887A300406055 /* SCDeckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D56558822B887A300406055 /* SCDeckViewController.swift */; };
 		0D56558B22B887BF00406055 /* SCNewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D56558A22B887BF00406055 /* SCNewsViewController.swift */; };
 		0D56558D22B887D100406055 /* SCMoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D56558C22B887D100406055 /* SCMoreViewController.swift */; };
+		0D92218A22BC4F2B0052D91D /* JandaManateeBubble.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0D92218922BC4F1E0052D91D /* JandaManateeBubble.ttf */; };
+		0D92218C22BC58F60052D91D /* SCCardsManaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D92218B22BC58F60052D91D /* SCCardsManaView.swift */; };
+		0D92218F22BC8CF90052D91D /* SCCardsDetailsItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D92218E22BC8CF90052D91D /* SCCardsDetailsItem.swift */; };
+		0D92219322BCA5B70052D91D /* SCCardsDisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D92219222BCA5B70052D91D /* SCCardsDisplayView.swift */; };
+		0D92219622BCA5DF0052D91D /* SCCardsDisplayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D92219522BCA5DF0052D91D /* SCCardsDisplayView.xib */; };
+		0D92219A22BCB8C00052D91D /* SCCardItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D92219922BCB8C00052D91D /* SCCardItem.swift */; };
+		0D92219C22BCB9E80052D91D /* SCCardsInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D92219B22BCB9E80052D91D /* SCCardsInfo.swift */; };
 		0DD10E8822BAFA8600DC77D1 /* SCCardsSelectionOptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD10E8722BAFA8600DC77D1 /* SCCardsSelectionOptionCell.swift */; };
 		0DD10E8A22BAFAA500DC77D1 /* SCCardsSelectionOptionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DD10E8922BAFAA500DC77D1 /* SCCardsSelectionOptionCell.xib */; };
 		0DD10E8C22BB137600DC77D1 /* SCCardsSelectionDetailsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD10E8B22BB137600DC77D1 /* SCCardsSelectionDetailsCell.swift */; };
@@ -164,6 +171,13 @@
 		0D56558822B887A300406055 /* SCDeckViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCDeckViewController.swift; sourceTree = "<group>"; };
 		0D56558A22B887BF00406055 /* SCNewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCNewsViewController.swift; sourceTree = "<group>"; };
 		0D56558C22B887D100406055 /* SCMoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCMoreViewController.swift; sourceTree = "<group>"; };
+		0D92218922BC4F1E0052D91D /* JandaManateeBubble.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = JandaManateeBubble.ttf; sourceTree = "<group>"; };
+		0D92218B22BC58F60052D91D /* SCCardsManaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCCardsManaView.swift; sourceTree = "<group>"; };
+		0D92218E22BC8CF90052D91D /* SCCardsDetailsItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCCardsDetailsItem.swift; sourceTree = "<group>"; };
+		0D92219222BCA5B70052D91D /* SCCardsDisplayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCCardsDisplayView.swift; sourceTree = "<group>"; };
+		0D92219522BCA5DF0052D91D /* SCCardsDisplayView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SCCardsDisplayView.xib; sourceTree = "<group>"; };
+		0D92219922BCB8C00052D91D /* SCCardItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCCardItem.swift; sourceTree = "<group>"; };
+		0D92219B22BCB9E80052D91D /* SCCardsInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCCardsInfo.swift; sourceTree = "<group>"; };
 		0DD10E8722BAFA8600DC77D1 /* SCCardsSelectionOptionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCCardsSelectionOptionCell.swift; sourceTree = "<group>"; };
 		0DD10E8922BAFAA500DC77D1 /* SCCardsSelectionOptionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SCCardsSelectionOptionCell.xib; sourceTree = "<group>"; };
 		0DD10E8B22BB137600DC77D1 /* SCCardsSelectionDetailsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCCardsSelectionDetailsCell.swift; sourceTree = "<group>"; };
@@ -211,6 +225,7 @@
 		0D32FB7922B9B3EA00D187CB /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				0D92218922BC4F1E0052D91D /* JandaManateeBubble.ttf */,
 				0D32FB7A22B9B3FD00D187CB /* OPTIBelwe-Medium.otf */,
 			);
 			path = Fonts;
@@ -293,6 +308,7 @@
 		0D56551A22B8650C00406055 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				0D92218D22BC8C820052D91D /* Model */,
 				0DD10EA222BB216D00DC77D1 /* SCCardsViewModel.swift */,
 			);
 			path = ViewModel;
@@ -478,7 +494,15 @@
 			path = More;
 			sourceTree = "<group>";
 		};
-		0DD10E8622BAFA4600DC77D1 /* View */ = {
+		0D92218D22BC8C820052D91D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0D92218E22BC8CF90052D91D /* SCCardsDetailsItem.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0D92219022BCA5110052D91D /* SelectionView */ = {
 			isa = PBXGroup;
 			children = (
 				0D32FB8922BA13DC00D187CB /* SCCardsSelectionView.swift */,
@@ -487,11 +511,21 @@
 				0DD10E8922BAFAA500DC77D1 /* SCCardsSelectionOptionCell.xib */,
 				0DD10E8B22BB137600DC77D1 /* SCCardsSelectionDetailsCell.swift */,
 				0DD10E8D22BB139500DC77D1 /* SCCardsSelectionDetailsCell.xib */,
+				0D92218B22BC58F60052D91D /* SCCardsManaView.swift */,
 			);
-			path = View;
+			path = SelectionView;
 			sourceTree = "<group>";
 		};
-		0DD10E8F22BB1B1100DC77D1 /* Cards */ = {
+		0D92219122BCA5330052D91D /* DisplayView */ = {
+			isa = PBXGroup;
+			children = (
+				0D92219222BCA5B70052D91D /* SCCardsDisplayView.swift */,
+				0D92219522BCA5DF0052D91D /* SCCardsDisplayView.xib */,
+			);
+			path = DisplayView;
+			sourceTree = "<group>";
+		};
+		0D92219722BCB8900052D91D /* Selection */ = {
 			isa = PBXGroup;
 			children = (
 				0DD10E9022BB1B3E00DC77D1 /* SCMetadata.swift */,
@@ -503,6 +537,33 @@
 				0DD10E9C22BB1FA500DC77D1 /* SCMetadataMinionType.swift */,
 				0DD10E9E22BB203B00DC77D1 /* SCMetadataKeyword.swift */,
 				0DD10EA422BB473000DC77D1 /* SCMetadataBase.swift */,
+			);
+			path = Selection;
+			sourceTree = "<group>";
+		};
+		0D92219822BCB89D0052D91D /* Display */ = {
+			isa = PBXGroup;
+			children = (
+				0D92219922BCB8C00052D91D /* SCCardItem.swift */,
+				0D92219B22BCB9E80052D91D /* SCCardsInfo.swift */,
+			);
+			path = Display;
+			sourceTree = "<group>";
+		};
+		0DD10E8622BAFA4600DC77D1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0D92219122BCA5330052D91D /* DisplayView */,
+				0D92219022BCA5110052D91D /* SelectionView */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0DD10E8F22BB1B1100DC77D1 /* Cards */ = {
+			isa = PBXGroup;
+			children = (
+				0D92219822BCB89D0052D91D /* Display */,
+				0D92219722BCB8900052D91D /* Selection */,
 			);
 			path = Cards;
 			sourceTree = "<group>";
@@ -632,7 +693,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D5654F622B8648600406055 /* LaunchScreen.storyboard in Resources */,
+				0D92218A22BC4F2B0052D91D /* JandaManateeBubble.ttf in Resources */,
 				0D32FB7C22B9B41100D187CB /* OPTIBelwe-Medium.otf in Resources */,
+				0D92219622BCA5DF0052D91D /* SCCardsDisplayView.xib in Resources */,
 				0D32FB7422B9A72900D187CB /* main.json in Resources */,
 				0D5654F322B8648600406055 /* Assets.xcassets in Resources */,
 				0DD10E8A22BAFAA500DC77D1 /* SCCardsSelectionOptionCell.xib in Resources */,
@@ -725,6 +788,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D56555522B8659700406055 /* UINavigationController+extension.swift in Sources */,
+				0D92218F22BC8CF90052D91D /* SCCardsDetailsItem.swift in Sources */,
 				0D56555222B8659700406055 /* UILabel+extension.swift in Sources */,
 				0D56556022B8659700406055 /* SCNetworkManager.swift in Sources */,
 				0D56556622B8659700406055 /* NSString+SCAddition.m in Sources */,
@@ -749,9 +813,11 @@
 				0DD10E9B22BB1F1A00DC77D1 /* SCMetadaClass.swift in Sources */,
 				0D56555F22B8659700406055 /* FFLabel.swift in Sources */,
 				0D56556922B8659700406055 /* UILabel+SCAddition.m in Sources */,
+				0D92219A22BCB8C00052D91D /* SCCardItem.swift in Sources */,
 				0D56554F22B8659700406055 /* UIFont+extension.swift in Sources */,
 				0DD10E9522BB1CD200DC77D1 /* SCMetadataSetGroup.swift in Sources */,
 				0D32FB8722B9ED3800D187CB /* SCVisitorView.swift in Sources */,
+				0D92218C22BC58F60052D91D /* SCCardsManaView.swift in Sources */,
 				0D56556722B8659700406055 /* UIScreen+UISCreen_extenshion.m in Sources */,
 				0D56555E22B8659700406055 /* UITableView+extension.swift in Sources */,
 				0D56555322B8659700406055 /* UIView+extension.swift in Sources */,
@@ -769,6 +835,7 @@
 				0D56554D22B8659700406055 /* UIImageView+extension.swift in Sources */,
 				0D56558B22B887BF00406055 /* SCNewsViewController.swift in Sources */,
 				0D56557922B8693800406055 /* SCOAuthViewController.swift in Sources */,
+				0D92219322BCA5B70052D91D /* SCCardsDisplayView.swift in Sources */,
 				0D56555922B8659700406055 /* String+extension.swift in Sources */,
 				0D56558922B887A300406055 /* SCDeckViewController.swift in Sources */,
 				0D5654EC22B8648500406055 /* AppDelegate.swift in Sources */,
@@ -780,6 +847,7 @@
 				0DD10E9D22BB1FA500DC77D1 /* SCMetadataMinionType.swift in Sources */,
 				0D56556422B8659700406055 /* NSObject+SCAddition.m in Sources */,
 				0D56557E22B86C0400406055 /* SCNetworkManager+extension.swift in Sources */,
+				0D92219C22BCB9E80052D91D /* SCCardsInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

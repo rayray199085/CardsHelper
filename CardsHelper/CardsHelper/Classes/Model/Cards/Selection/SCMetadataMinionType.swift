@@ -1,5 +1,5 @@
 //
-//  SCMetadataType.swift
+//  SCMetadataMinionType.swift
 //  CardsHelper
 //
 //  Created by Stephen Cao on 20/6/19.
@@ -8,9 +8,11 @@
 
 import UIKit
 
-class SCMetadataType: SCMetadataBase {
+class SCMetadataMinionType: SCMetadataBase {
     @objc var id: Int = 0
-    
+    override var category: String{
+        return "minionType"
+    }
     override var description: String{
         return yy_modelDescription()
     }

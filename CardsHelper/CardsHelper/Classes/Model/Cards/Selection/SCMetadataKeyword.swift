@@ -12,7 +12,9 @@ class SCMetadataKeyword: SCMetadataBase {
     @objc var id: Int = 0
     @objc var refText: String?
     @objc var text: String?
-    
+    override var category: String{
+        return "keyword"
+    }
     override var description: String{
         return yy_modelDescription()
     }
