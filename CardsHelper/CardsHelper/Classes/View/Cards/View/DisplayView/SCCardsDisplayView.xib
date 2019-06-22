@@ -22,7 +22,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kzf-W1-4Bw">
-                    <rect key="frame" x="0.0" y="44" width="57" height="48"/>
+                    <rect key="frame" x="5" y="49" width="57" height="48"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="57" id="PqD-gt-gxD"/>
                         <constraint firstAttribute="height" constant="48" id="pg5-bb-olm"/>
@@ -33,7 +33,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HB3-6c-IW3">
-                    <rect key="frame" x="357" y="44" width="57" height="48"/>
+                    <rect key="frame" x="352" y="49" width="57" height="48"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="57" id="8kD-5u-uMc"/>
                         <constraint firstAttribute="height" constant="48" id="9Tq-jQ-wY4"/>
@@ -44,24 +44,33 @@
                     </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GO2-Pk-R8M">
-                    <rect key="frame" x="207" y="68" width="0.0" height="0.0"/>
+                    <rect key="frame" x="207" y="73" width="0.0" height="0.0"/>
                     <fontDescription key="fontDescription" name="JandaManateeBubble" family="Janda Manatee Bubble" pointSize="30"/>
                     <color key="textColor" red="0.28758722539999998" green="0.076255179940000001" blue="0.4706338048" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="p6e-tE-hvo">
+                    <rect key="frame" x="0.0" y="97" width="414" height="765"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
             </subviews>
             <color key="backgroundColor" red="0.90196078431372551" green="0.84313725490196079" blue="0.69019607843137254" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
+                <constraint firstItem="p6e-tE-hvo" firstAttribute="top" secondItem="kzf-W1-4Bw" secondAttribute="bottom" id="8oq-kb-raV"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="p6e-tE-hvo" secondAttribute="bottom" id="HNa-UL-xCf"/>
                 <constraint firstItem="GO2-Pk-R8M" firstAttribute="centerY" secondItem="kzf-W1-4Bw" secondAttribute="centerY" id="NrQ-Fz-imK"/>
-                <constraint firstItem="HB3-6c-IW3" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="PjI-zd-3Hj"/>
-                <constraint firstItem="kzf-W1-4Bw" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="cYa-W1-bMd"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="HB3-6c-IW3" secondAttribute="trailing" id="i1K-Lj-ROe"/>
+                <constraint firstItem="HB3-6c-IW3" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="5" id="PjI-zd-3Hj"/>
+                <constraint firstItem="p6e-tE-hvo" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="VGv-F6-OZN"/>
+                <constraint firstItem="kzf-W1-4Bw" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="5" id="cYa-W1-bMd"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="p6e-tE-hvo" secondAttribute="trailing" id="dmx-Ja-w0H"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="HB3-6c-IW3" secondAttribute="trailing" constant="5" id="i1K-Lj-ROe"/>
                 <constraint firstItem="GO2-Pk-R8M" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="o0C-gp-l5e"/>
-                <constraint firstItem="kzf-W1-4Bw" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="zWe-8H-d3B"/>
+                <constraint firstItem="kzf-W1-4Bw" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="5" id="zWe-8H-d3B"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <connections>
                 <outlet property="pageCountLabel" destination="GO2-Pk-R8M" id="yBC-ca-oaV"/>
+                <outlet property="tableView" destination="p6e-tE-hvo" id="UCV-RW-efa"/>
                 <outletCollection property="directionButtons" destination="kzf-W1-4Bw" collectionClass="NSMutableArray" id="1sl-rL-buV"/>
                 <outletCollection property="directionButtons" destination="HB3-6c-IW3" collectionClass="NSMutableArray" id="rtr-IC-a5d"/>
             </connections>

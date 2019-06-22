@@ -42,6 +42,7 @@ class SCCardsSelectionView: UIView {
     }
     
     override func awakeFromNib() {
+        super.awakeFromNib()
         selectionTableView.delegate = self
         selectionTableView.dataSource = self
         selectionTableView.register(UINib(nibName: "SCCardsSelectionOptionCell", bundle: nil), forCellReuseIdentifier: selectionReuseId)

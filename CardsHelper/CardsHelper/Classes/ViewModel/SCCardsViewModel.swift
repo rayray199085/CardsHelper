@@ -131,6 +131,32 @@ extension SCCardsViewModel{
                 })
             }
             group.notify(queue: DispatchQueue.main, execute: {
+                for card in self.cards{
+                    let clsRes = self.metadata?.classes?.filter({ (cls) -> Bool in
+                        return cls.id == card.classId
+                    })
+                    if clsRes?.count ?? 0 > 0{
+                        card.cardClassName = clsRes?[0].name
+                    }
+                    let typeRes = self.metadata?.types?.filter({ (type) -> Bool in
+                        return type.id == card.cardTypeId
+                    })
+                    if typeRes?.count ?? 0 > 0{
+                        card.cardTypeName = typeRes?[0].name
+                    }
+                    let setRes = self.metadata?.sets?.filter({ (set) -> Bool in
+                        return set.id == card.cardSetId
+                    })
+                    if setRes?.count ?? 0 > 0{
+                        card.cardSetName = setRes?[0].name
+                    }
+                    let rarRes = self.metadata?.rarities?.filter({ (rar) -> Bool in
+                        return rar.id == card.rarityId
+                    })
+                    if rarRes?.count ?? 0 > 0{
+                        card.cardRarityName = rarRes?[0].name
+                    }
+                }
                 completion(isSuccess)
             })
         }

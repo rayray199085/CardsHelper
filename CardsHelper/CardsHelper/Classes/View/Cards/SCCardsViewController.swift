@@ -12,6 +12,8 @@ import SVProgressHUD
 class SCCardsViewController: SCBaseViewController {
     private lazy var cardsView = SCCardsSelectionView.cardsSelectionView()
     private lazy var displayView = SCCardsDisplayView.displayView()
+    private lazy var imageMaskView = SCCardsMaskView.cardsMaskView()
+    
     private var prevParams: [String: String]?
     private var currentPage = 1{
         didSet{
@@ -40,7 +42,7 @@ class SCCardsViewController: SCBaseViewController {
         viewModel?.loadCards(params: params!, completion: { [weak self](_) in
             SVProgressHUD.dismiss()
             self?.updateDisplayViewContent()
-            print(self?.viewModel?.cards.count ?? 0)
+            self?.viewMoreCards()
         })
     }
 
@@ -52,6 +54,7 @@ class SCCardsViewController: SCBaseViewController {
         viewModel = SCCardsViewModel()
         setupDisplayView()
         setupSelectionView()
+        setupMaskView()
     }
     @objc private func clickSearchButton(){
         navigationItem.leftBarButtonItem?.isEnabled = false
@@ -82,6 +85,11 @@ private extension SCCardsViewController{
         view.addSubview(displayView)
         displayView.delegate = self
     }
+    func setupMaskView(){
+        tabBarController?.view.addSubview(imageMaskView)
+        imageMaskView.isHidden = true
+        imageMaskView.delegate = self
+    }
 }
 extension SCCardsViewController: SCCardsSelectionViewDelegate{
     func didSelectCardsProperties(view: SCCardsSelectionView?, params: [String : String]) {
@@ -89,11 +97,17 @@ extension SCCardsViewController: SCCardsSelectionViewDelegate{
     }
 }
 extension SCCardsViewController: SCCardsDisplayViewDelegate{
+    func didSelectCell(view: SCCardsDisplayView, centerPoint: CGPoint, image: UIImage?) {
+        imageMaskView.isHidden = false
+        imageMaskView.setImage(centerPoint: centerPoint, image: image)
+    }
+    
     func didClickPrevButton(view: SCCardsDisplayView) {
         if currentPage <= 1{
             return
         }
         currentPage -= 1
+        viewMoreCards()
     }
     
     func didClickNextButton(view: SCCardsDisplayView) {
@@ -102,7 +116,7 @@ extension SCCardsViewController: SCCardsDisplayViewDelegate{
         }
         currentPage += 1
         if currentPage * 40 <= viewModel?.cards.count ?? 0{
-            
+            viewMoreCards()
         }else{
             loadMoreCards()
         }
@@ -115,5 +129,21 @@ private extension SCCardsViewController{
         }
         displayView.pageCountLabel.text = pageCount > 1 ? "\(currentPage) / \(pageCount)" : ""
         displayView.updateDirectionButtonDisplay(currentPage: currentPage, pageCount: pageCount)
+    }
+    
+    func viewMoreCards(){
+        guard let array = viewModel?.cards else{
+                return
+        }
+        let remaining = array.count - (currentPage - 1) * 40
+        let length = remaining >= 40 ? 40 : remaining
+        displayView.cards = (array as NSArray).subarray(with: NSRange(location: (currentPage - 1) * 40, length: length)) as? [SCCardItem]
+        displayView.tableView.scroll(to: UITableView.scrollsTo.top, animated: true)
+    }
+}
+
+extension SCCardsViewController: SCCardsMaskViewDelegate{
+    func didClickImageMaskButton(view: SCCardsMaskView?) {
+        imageMaskView.isHidden = true
     }
 }

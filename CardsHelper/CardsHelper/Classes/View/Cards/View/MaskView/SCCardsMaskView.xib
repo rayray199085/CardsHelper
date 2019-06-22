@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SCCardsMaskView" customModule="CardsHelper" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fCk-Bn-PnK">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <action selector="clickImageMaskButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="VJM-eb-9wN"/>
+                    </connections>
+                </button>
+                <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fE7-cS-Sam">
+                    <rect key="frame" x="5" y="169" width="404" height="558"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="fE7-cS-Sam" secondAttribute="height" multiplier="375:518" id="H3y-D2-Ed8"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="fCk-Bn-PnK" secondAttribute="trailing" id="3s5-4p-hS0"/>
+                <constraint firstAttribute="bottom" secondItem="fCk-Bn-PnK" secondAttribute="bottom" id="CTt-MQ-cJ9"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="fE7-cS-Sam" secondAttribute="trailing" constant="5" id="O8A-v6-2U6"/>
+                <constraint firstItem="fCk-Bn-PnK" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="O8k-XF-zSm"/>
+                <constraint firstItem="fCk-Bn-PnK" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Qb8-as-zqq"/>
+                <constraint firstItem="fE7-cS-Sam" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="WP8-2d-xg8"/>
+                <constraint firstItem="fE7-cS-Sam" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="djY-Hw-lDN"/>
+                <constraint firstItem="fE7-cS-Sam" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="5" id="e1a-5m-8ny"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="cardsImageView" destination="fE7-cS-Sam" id="T8x-km-ETv"/>
+            </connections>
+        </view>
+    </objects>
+</document>

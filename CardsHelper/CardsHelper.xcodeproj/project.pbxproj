@@ -66,6 +66,10 @@
 		0D92219622BCA5DF0052D91D /* SCCardsDisplayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D92219522BCA5DF0052D91D /* SCCardsDisplayView.xib */; };
 		0D92219A22BCB8C00052D91D /* SCCardItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D92219922BCB8C00052D91D /* SCCardItem.swift */; };
 		0D92219C22BCB9E80052D91D /* SCCardsInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D92219B22BCB9E80052D91D /* SCCardsInfo.swift */; };
+		0DAAA0F622BDA00C00DF51B3 /* SCCardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DAAA0F522BDA00C00DF51B3 /* SCCardTableViewCell.swift */; };
+		0DAAA0F822BDA02200DF51B3 /* SCCardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DAAA0F722BDA02200DF51B3 /* SCCardTableViewCell.xib */; };
+		0DAAA0FB22BDF49400DF51B3 /* SCCardsMaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DAAA0FA22BDF49400DF51B3 /* SCCardsMaskView.swift */; };
+		0DAAA0FD22BDF4A500DF51B3 /* SCCardsMaskView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DAAA0FC22BDF4A500DF51B3 /* SCCardsMaskView.xib */; };
 		0DD10E8822BAFA8600DC77D1 /* SCCardsSelectionOptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD10E8722BAFA8600DC77D1 /* SCCardsSelectionOptionCell.swift */; };
 		0DD10E8A22BAFAA500DC77D1 /* SCCardsSelectionOptionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DD10E8922BAFAA500DC77D1 /* SCCardsSelectionOptionCell.xib */; };
 		0DD10E8C22BB137600DC77D1 /* SCCardsSelectionDetailsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD10E8B22BB137600DC77D1 /* SCCardsSelectionDetailsCell.swift */; };
@@ -178,6 +182,10 @@
 		0D92219522BCA5DF0052D91D /* SCCardsDisplayView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SCCardsDisplayView.xib; sourceTree = "<group>"; };
 		0D92219922BCB8C00052D91D /* SCCardItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCCardItem.swift; sourceTree = "<group>"; };
 		0D92219B22BCB9E80052D91D /* SCCardsInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCCardsInfo.swift; sourceTree = "<group>"; };
+		0DAAA0F522BDA00C00DF51B3 /* SCCardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCCardTableViewCell.swift; sourceTree = "<group>"; };
+		0DAAA0F722BDA02200DF51B3 /* SCCardTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SCCardTableViewCell.xib; sourceTree = "<group>"; };
+		0DAAA0FA22BDF49400DF51B3 /* SCCardsMaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCCardsMaskView.swift; sourceTree = "<group>"; };
+		0DAAA0FC22BDF4A500DF51B3 /* SCCardsMaskView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SCCardsMaskView.xib; sourceTree = "<group>"; };
 		0DD10E8722BAFA8600DC77D1 /* SCCardsSelectionOptionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCCardsSelectionOptionCell.swift; sourceTree = "<group>"; };
 		0DD10E8922BAFAA500DC77D1 /* SCCardsSelectionOptionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SCCardsSelectionOptionCell.xib; sourceTree = "<group>"; };
 		0DD10E8B22BB137600DC77D1 /* SCCardsSelectionDetailsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCCardsSelectionDetailsCell.swift; sourceTree = "<group>"; };
@@ -521,6 +529,8 @@
 			children = (
 				0D92219222BCA5B70052D91D /* SCCardsDisplayView.swift */,
 				0D92219522BCA5DF0052D91D /* SCCardsDisplayView.xib */,
+				0DAAA0F522BDA00C00DF51B3 /* SCCardTableViewCell.swift */,
+				0DAAA0F722BDA02200DF51B3 /* SCCardTableViewCell.xib */,
 			);
 			path = DisplayView;
 			sourceTree = "<group>";
@@ -550,9 +560,19 @@
 			path = Display;
 			sourceTree = "<group>";
 		};
+		0DAAA0F922BDF47100DF51B3 /* MaskView */ = {
+			isa = PBXGroup;
+			children = (
+				0DAAA0FA22BDF49400DF51B3 /* SCCardsMaskView.swift */,
+				0DAAA0FC22BDF4A500DF51B3 /* SCCardsMaskView.xib */,
+			);
+			path = MaskView;
+			sourceTree = "<group>";
+		};
 		0DD10E8622BAFA4600DC77D1 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				0DAAA0F922BDF47100DF51B3 /* MaskView */,
 				0D92219122BCA5330052D91D /* DisplayView */,
 				0D92219022BCA5110052D91D /* SelectionView */,
 			);
@@ -694,9 +714,11 @@
 			files = (
 				0D5654F622B8648600406055 /* LaunchScreen.storyboard in Resources */,
 				0D92218A22BC4F2B0052D91D /* JandaManateeBubble.ttf in Resources */,
+				0DAAA0FD22BDF4A500DF51B3 /* SCCardsMaskView.xib in Resources */,
 				0D32FB7C22B9B41100D187CB /* OPTIBelwe-Medium.otf in Resources */,
 				0D92219622BCA5DF0052D91D /* SCCardsDisplayView.xib in Resources */,
 				0D32FB7422B9A72900D187CB /* main.json in Resources */,
+				0DAAA0F822BDA02200DF51B3 /* SCCardTableViewCell.xib in Resources */,
 				0D5654F322B8648600406055 /* Assets.xcassets in Resources */,
 				0DD10E8A22BAFAA500DC77D1 /* SCCardsSelectionOptionCell.xib in Resources */,
 				0D32FB8822B9ED3800D187CB /* SCVisitorView.xib in Resources */,
@@ -807,6 +829,7 @@
 				0D32FB8A22BA13DC00D187CB /* SCCardsSelectionView.swift in Sources */,
 				0D56556522B8659700406055 /* UIImageView+SCAddition.m in Sources */,
 				0D56555A22B8659700406055 /* UITableViewCell+extension.swift in Sources */,
+				0DAAA0FB22BDF49400DF51B3 /* SCCardsMaskView.swift in Sources */,
 				0DD10E9722BB1DEA00DC77D1 /* SCMetadataType.swift in Sources */,
 				0D56557822B8693800406055 /* SCMainViewController.swift in Sources */,
 				0D56554C22B8659700406055 /* UIApplication+extension.swift in Sources */,
@@ -848,6 +871,7 @@
 				0D56556422B8659700406055 /* NSObject+SCAddition.m in Sources */,
 				0D56557E22B86C0400406055 /* SCNetworkManager+extension.swift in Sources */,
 				0D92219C22BCB9E80052D91D /* SCCardsInfo.swift in Sources */,
+				0DAAA0F622BDA00C00DF51B3 /* SCCardTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
