@@ -9,7 +9,6 @@
 import UIKit
 
 class SCMetadataRarity: SCMetadataBase {
-    @objc var id: Int = 0
     @objc var craftingCost: [NSNumber]?
     @objc var dustValue: [NSNumber]?
     override var category: String{

@@ -8,8 +8,7 @@
 
 import UIKit
 
-class SCMetadaClass: SCMetadataBase {
-    @objc var id: Int = 0
+class SCMetadaClass: SCMetadataBase {    
     override var category: String{
         return "class"
     }

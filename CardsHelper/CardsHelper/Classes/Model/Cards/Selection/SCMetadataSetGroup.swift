@@ -8,11 +8,13 @@
 
 import UIKit
 
-class SCMetadataSetGroup: SCMetadataBase {
+class SCMetadataSetGroup: NSObject {
     @objc var year: Int = 0
     @objc var cardSets: [String]?
     @objc var standard: Int = 0
     @objc var icon: String?
+    @objc var slug: String?
+    @objc var name: String?
     
     override var description: String{
         return yy_modelDescription()

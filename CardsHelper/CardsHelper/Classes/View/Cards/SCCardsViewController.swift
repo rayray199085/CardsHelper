@@ -32,7 +32,7 @@ class SCCardsViewController: SCBaseViewController {
             loadMoreCards()
         }
     }
-    func loadMoreCards(){
+    private func loadMoreCards(){
         var params = self.params
         if prevParams == nil{
             prevParams = params
@@ -133,7 +133,7 @@ private extension SCCardsViewController{
     
     func viewMoreCards(){
         guard let array = viewModel?.cards else{
-                return
+            return
         }
         let remaining = array.count - (currentPage - 1) * 40
         let length = remaining >= 40 ? 40 : remaining

@@ -14,6 +14,17 @@
 		0D32FB8822B9ED3800D187CB /* SCVisitorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D32FB8622B9ED3800D187CB /* SCVisitorView.xib */; };
 		0D32FB8A22BA13DC00D187CB /* SCCardsSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D32FB8922BA13DC00D187CB /* SCCardsSelectionView.swift */; };
 		0D32FB8E22BA142200D187CB /* SCCardsSelectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D32FB8D22BA142200D187CB /* SCCardsSelectionView.xib */; };
+		0D3DEACF22BF04D1005F5972 /* SCDeckStatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3DEACE22BF04D1005F5972 /* SCDeckStatsView.swift */; };
+		0D3DEAD122BF04DF005F5972 /* SCDeckStatsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D3DEAD022BF04DF005F5972 /* SCDeckStatsView.xib */; };
+		0D3DEAD522BF0BFE005F5972 /* SCDeckChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3DEAD422BF0BFE005F5972 /* SCDeckChartView.swift */; };
+		0D3DEAD722BF201F005F5972 /* SCDeckViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3DEAD622BF201F005F5972 /* SCDeckViewModel.swift */; };
+		0D3DEADB22BF20B0005F5972 /* SCDeckData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3DEADA22BF20B0005F5972 /* SCDeckData.swift */; };
+		0D3DEAE022BF2F9F005F5972 /* SCBaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3DEADF22BF2F9F005F5972 /* SCBaseViewModel.swift */; };
+		0D3DEAE422BF33DB005F5972 /* SCDeckAddDeckCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3DEAE322BF33DB005F5972 /* SCDeckAddDeckCodeView.swift */; };
+		0D3DEAE622BF3407005F5972 /* SCDeckAddDeckCodeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D3DEAE522BF3407005F5972 /* SCDeckAddDeckCodeView.xib */; };
+		0D3DEAE822BF4AF5005F5972 /* SCDeckCodeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3DEAE722BF4AF5005F5972 /* SCDeckCodeTableViewCell.swift */; };
+		0D3DEAEA22BF4B2E005F5972 /* SCDeckCodeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D3DEAE922BF4B2E005F5972 /* SCDeckCodeTableViewCell.xib */; };
+		0D3DEAED22BF53E4005F5972 /* SCDeckCodeInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3DEAEC22BF53E4005F5972 /* SCDeckCodeInfo.swift */; };
 		0D5654EC22B8648500406055 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5654EB22B8648500406055 /* AppDelegate.swift */; };
 		0D5654F322B8648600406055 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D5654F222B8648600406055 /* Assets.xcassets */; };
 		0D5654F622B8648600406055 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D5654F422B8648600406055 /* LaunchScreen.storyboard */; };
@@ -114,6 +125,17 @@
 		0D32FB8622B9ED3800D187CB /* SCVisitorView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SCVisitorView.xib; sourceTree = "<group>"; };
 		0D32FB8922BA13DC00D187CB /* SCCardsSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCCardsSelectionView.swift; sourceTree = "<group>"; };
 		0D32FB8D22BA142200D187CB /* SCCardsSelectionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SCCardsSelectionView.xib; sourceTree = "<group>"; };
+		0D3DEACE22BF04D1005F5972 /* SCDeckStatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCDeckStatsView.swift; sourceTree = "<group>"; };
+		0D3DEAD022BF04DF005F5972 /* SCDeckStatsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SCDeckStatsView.xib; sourceTree = "<group>"; };
+		0D3DEAD422BF0BFE005F5972 /* SCDeckChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCDeckChartView.swift; sourceTree = "<group>"; };
+		0D3DEAD622BF201F005F5972 /* SCDeckViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCDeckViewModel.swift; sourceTree = "<group>"; };
+		0D3DEADA22BF20B0005F5972 /* SCDeckData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCDeckData.swift; sourceTree = "<group>"; };
+		0D3DEADF22BF2F9F005F5972 /* SCBaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCBaseViewModel.swift; sourceTree = "<group>"; };
+		0D3DEAE322BF33DB005F5972 /* SCDeckAddDeckCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCDeckAddDeckCodeView.swift; sourceTree = "<group>"; };
+		0D3DEAE522BF3407005F5972 /* SCDeckAddDeckCodeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SCDeckAddDeckCodeView.xib; sourceTree = "<group>"; };
+		0D3DEAE722BF4AF5005F5972 /* SCDeckCodeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCDeckCodeTableViewCell.swift; sourceTree = "<group>"; };
+		0D3DEAE922BF4B2E005F5972 /* SCDeckCodeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SCDeckCodeTableViewCell.xib; sourceTree = "<group>"; };
+		0D3DEAEC22BF53E4005F5972 /* SCDeckCodeInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCDeckCodeInfo.swift; sourceTree = "<group>"; };
 		0D5654E822B8648500406055 /* CardsHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CardsHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D5654EB22B8648500406055 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0D5654F222B8648600406055 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -248,6 +270,53 @@
 			path = MXCornerRadius;
 			sourceTree = "<group>";
 		};
+		0D3DEACD22BF04B4005F5972 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0D3DEAE222BF3398005F5972 /* Add */,
+				0D3DEAE122BF338C005F5972 /* Stats */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0D3DEAD922BF2051005F5972 /* Deck */ = {
+			isa = PBXGroup;
+			children = (
+				0D3DEADA22BF20B0005F5972 /* SCDeckData.swift */,
+			);
+			path = Deck;
+			sourceTree = "<group>";
+		};
+		0D3DEAE122BF338C005F5972 /* Stats */ = {
+			isa = PBXGroup;
+			children = (
+				0D3DEACE22BF04D1005F5972 /* SCDeckStatsView.swift */,
+				0D3DEAD022BF04DF005F5972 /* SCDeckStatsView.xib */,
+				0D3DEAD422BF0BFE005F5972 /* SCDeckChartView.swift */,
+			);
+			path = Stats;
+			sourceTree = "<group>";
+		};
+		0D3DEAE222BF3398005F5972 /* Add */ = {
+			isa = PBXGroup;
+			children = (
+				0D3DEAEB22BF53CF005F5972 /* Model */,
+				0D3DEAE322BF33DB005F5972 /* SCDeckAddDeckCodeView.swift */,
+				0D3DEAE522BF3407005F5972 /* SCDeckAddDeckCodeView.xib */,
+				0D3DEAE722BF4AF5005F5972 /* SCDeckCodeTableViewCell.swift */,
+				0D3DEAE922BF4B2E005F5972 /* SCDeckCodeTableViewCell.xib */,
+			);
+			path = Add;
+			sourceTree = "<group>";
+		};
+		0D3DEAEB22BF53CF005F5972 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0D3DEAEC22BF53E4005F5972 /* SCDeckCodeInfo.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		0D5654DF22B8648500406055 = {
 			isa = PBXGroup;
 			children = (
@@ -318,6 +387,8 @@
 			children = (
 				0D92218D22BC8C820052D91D /* Model */,
 				0DD10EA222BB216D00DC77D1 /* SCCardsViewModel.swift */,
+				0D3DEAD622BF201F005F5972 /* SCDeckViewModel.swift */,
+				0D3DEADF22BF2F9F005F5972 /* SCBaseViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -338,6 +409,7 @@
 		0D56551C22B8650C00406055 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				0D3DEAD922BF2051005F5972 /* Deck */,
 				0DD10E8F22BB1B1100DC77D1 /* Cards */,
 			);
 			path = Model;
@@ -481,6 +553,7 @@
 		0D56558322B8873000406055 /* Deck */ = {
 			isa = PBXGroup;
 			children = (
+				0D3DEACD22BF04B4005F5972 /* View */,
 				0D56558822B887A300406055 /* SCDeckViewController.swift */,
 			);
 			path = Deck;
@@ -720,10 +793,13 @@
 				0D32FB7422B9A72900D187CB /* main.json in Resources */,
 				0DAAA0F822BDA02200DF51B3 /* SCCardTableViewCell.xib in Resources */,
 				0D5654F322B8648600406055 /* Assets.xcassets in Resources */,
+				0D3DEAD122BF04DF005F5972 /* SCDeckStatsView.xib in Resources */,
 				0DD10E8A22BAFAA500DC77D1 /* SCCardsSelectionOptionCell.xib in Resources */,
+				0D3DEAEA22BF4B2E005F5972 /* SCDeckCodeTableViewCell.xib in Resources */,
 				0D32FB8822B9ED3800D187CB /* SCVisitorView.xib in Resources */,
 				0D32FB8E22BA142200D187CB /* SCCardsSelectionView.xib in Resources */,
 				0DD10E8E22BB139500DC77D1 /* SCCardsSelectionDetailsCell.xib in Resources */,
+				0D3DEAE622BF3407005F5972 /* SCDeckAddDeckCodeView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -753,26 +829,34 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-CardsHelper/Pods-CardsHelper-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AAInfographics/AAInfographics.framework",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireNetworkActivityIndicator/AlamofireNetworkActivityIndicator.framework",
 				"${BUILT_PRODUCTS_DIR}/Atributika/Atributika.framework",
 				"${BUILT_PRODUCTS_DIR}/DLSlideView/DLSlideView.framework",
 				"${BUILT_PRODUCTS_DIR}/DropDown/DropDown.framework",
+				"${BUILT_PRODUCTS_DIR}/FBRetainCycleDetector/FBRetainCycleDetector.framework",
+				"${BUILT_PRODUCTS_DIR}/MLeaksFinder/MLeaksFinder.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/YYModel/YYModel.framework",
 				"${BUILT_PRODUCTS_DIR}/pop/pop.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AAInfographics.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireNetworkActivityIndicator.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Atributika.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DLSlideView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DropDown.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBRetainCycleDetector.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MLeaksFinder.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYModel.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/pop.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -810,14 +894,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D56555522B8659700406055 /* UINavigationController+extension.swift in Sources */,
+				0D3DEAE822BF4AF5005F5972 /* SCDeckCodeTableViewCell.swift in Sources */,
 				0D92218F22BC8CF90052D91D /* SCCardsDetailsItem.swift in Sources */,
+				0D3DEAED22BF53E4005F5972 /* SCDeckCodeInfo.swift in Sources */,
 				0D56555222B8659700406055 /* UILabel+extension.swift in Sources */,
 				0D56556022B8659700406055 /* SCNetworkManager.swift in Sources */,
 				0D56556622B8659700406055 /* NSString+SCAddition.m in Sources */,
 				0D56555C22B8659700406055 /* UIPageControl+extension.swift in Sources */,
 				0DD10E9122BB1B3E00DC77D1 /* SCMetadata.swift in Sources */,
+				0D3DEAE422BF33DB005F5972 /* SCDeckAddDeckCodeView.swift in Sources */,
 				0DD10E8C22BB137600DC77D1 /* SCCardsSelectionDetailsCell.swift in Sources */,
 				0DD10E9922BB1E6600DC77D1 /* SCMetadataRarity.swift in Sources */,
+				0D3DEAD522BF0BFE005F5972 /* SCDeckChartView.swift in Sources */,
 				0D56556822B8659700406055 /* CABasicAnimation+SCAddition.m in Sources */,
 				0D56558122B86D1F00406055 /* SCUserAccount.swift in Sources */,
 				0D56556A22B8659700406055 /* UIColor+SCAddition.m in Sources */,
@@ -825,6 +913,7 @@
 				0D32FB8222B9C36C00D187CB /* MXCornerRadius.m in Sources */,
 				0D56558722B8877400406055 /* SCCardsViewController.swift in Sources */,
 				0D56557522B8693800406055 /* SCBaseViewController.swift in Sources */,
+				0D3DEAE022BF2F9F005F5972 /* SCBaseViewModel.swift in Sources */,
 				0D56557A22B8693800406055 /* SCNavigationViewController.swift in Sources */,
 				0D32FB8A22BA13DC00D187CB /* SCCardsSelectionView.swift in Sources */,
 				0D56556522B8659700406055 /* UIImageView+SCAddition.m in Sources */,
@@ -847,7 +936,9 @@
 				0D56554E22B8659700406055 /* NSAttributedString+extension.swift in Sources */,
 				0D56555B22B8659700406055 /* WKWebView+extension.swift in Sources */,
 				0DD10EA522BB473000DC77D1 /* SCMetadataBase.swift in Sources */,
+				0D3DEADB22BF20B0005F5972 /* SCDeckData.swift in Sources */,
 				0D56555422B8659700406055 /* UIImage+extension.swift in Sources */,
+				0D3DEACF22BF04D1005F5972 /* SCDeckStatsView.swift in Sources */,
 				0D56556322B8659700406055 /* UIButton+SCAddition.m in Sources */,
 				0D56555622B8659700406055 /* Bundle+extension.swift in Sources */,
 				0DD10EA322BB216D00DC77D1 /* SCCardsViewModel.swift in Sources */,
@@ -870,6 +961,7 @@
 				0DD10E9D22BB1FA500DC77D1 /* SCMetadataMinionType.swift in Sources */,
 				0D56556422B8659700406055 /* NSObject+SCAddition.m in Sources */,
 				0D56557E22B86C0400406055 /* SCNetworkManager+extension.swift in Sources */,
+				0D3DEAD722BF201F005F5972 /* SCDeckViewModel.swift in Sources */,
 				0D92219C22BCB9E80052D91D /* SCCardsInfo.swift in Sources */,
 				0DAAA0F622BDA00C00DF51B3 /* SCCardTableViewCell.swift in Sources */,
 			);

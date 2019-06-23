@@ -19,6 +19,8 @@ class SCCardsDisplayView: UIView {
             tableView.reloadData()
         }
     }
+    
+    @IBOutlet weak var tableViewTopCons: NSLayoutConstraint!
     weak var delegate: SCCardsDisplayViewDelegate?
     
     class func displayView()->SCCardsDisplayView{

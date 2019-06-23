@@ -21,7 +21,7 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kzf-W1-4Bw">
+                <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kzf-W1-4Bw" userLabel="left button">
                     <rect key="frame" x="5" y="49" width="57" height="48"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="57" id="PqD-gt-gxD"/>
@@ -32,7 +32,7 @@
                         <action selector="clickPrevPageButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="xRA-UP-CFX"/>
                     </connections>
                 </button>
-                <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HB3-6c-IW3">
+                <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HB3-6c-IW3" userLabel="right button">
                     <rect key="frame" x="352" y="49" width="57" height="48"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="57" id="8kD-5u-uMc"/>
@@ -56,7 +56,6 @@
             </subviews>
             <color key="backgroundColor" red="0.90196078431372551" green="0.84313725490196079" blue="0.69019607843137254" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
-                <constraint firstItem="p6e-tE-hvo" firstAttribute="top" secondItem="kzf-W1-4Bw" secondAttribute="bottom" id="8oq-kb-raV"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="p6e-tE-hvo" secondAttribute="bottom" id="HNa-UL-xCf"/>
                 <constraint firstItem="GO2-Pk-R8M" firstAttribute="centerY" secondItem="kzf-W1-4Bw" secondAttribute="centerY" id="NrQ-Fz-imK"/>
                 <constraint firstItem="HB3-6c-IW3" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="5" id="PjI-zd-3Hj"/>
@@ -64,6 +63,7 @@
                 <constraint firstItem="kzf-W1-4Bw" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="5" id="cYa-W1-bMd"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="p6e-tE-hvo" secondAttribute="trailing" id="dmx-Ja-w0H"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="HB3-6c-IW3" secondAttribute="trailing" constant="5" id="i1K-Lj-ROe"/>
+                <constraint firstItem="p6e-tE-hvo" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="53" id="irL-n8-PO4"/>
                 <constraint firstItem="GO2-Pk-R8M" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="o0C-gp-l5e"/>
                 <constraint firstItem="kzf-W1-4Bw" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="5" id="zWe-8H-d3B"/>
             </constraints>
@@ -71,6 +71,7 @@
             <connections>
                 <outlet property="pageCountLabel" destination="GO2-Pk-R8M" id="yBC-ca-oaV"/>
                 <outlet property="tableView" destination="p6e-tE-hvo" id="UCV-RW-efa"/>
+                <outlet property="tableViewTopCons" destination="irL-n8-PO4" id="WKZ-1r-r4T"/>
                 <outletCollection property="directionButtons" destination="kzf-W1-4Bw" collectionClass="NSMutableArray" id="1sl-rL-buV"/>
                 <outletCollection property="directionButtons" destination="HB3-6c-IW3" collectionClass="NSMutableArray" id="rtr-IC-a5d"/>
             </connections>

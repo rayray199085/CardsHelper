@@ -12,7 +12,6 @@ class SCMetadataSet: SCMetadataBase {
     override var category: String{
         return "set"
     }
-    @objc var id: Int = 0
     @objc var releaseDate: String?
     @objc var collectibleCount: Int = 0
     @objc var collectibleRevealedCount: Int = 0

@@ -1,4 +1,5 @@
 PODS:
+  - AAInfographics (2.0.4)
   - Alamofire (4.8.2)
   - AlamofireNetworkActivityIndicator (2.4.0):
     - Alamofire (~> 4.8)
@@ -16,6 +17,7 @@ PODS:
   - YYModel (1.0.4)
 
 DEPENDENCIES:
+  - AAInfographics (from `https://github.com/AAChartModel/AAChartKit-Swift.git`)
   - Alamofire
   - AlamofireNetworkActivityIndicator
   - Atributika
@@ -41,15 +43,21 @@ SPEC REPOS:
     - YYModel
 
 EXTERNAL SOURCES:
+  AAInfographics:
+    :git: https://github.com/AAChartModel/AAChartKit-Swift.git
   DLSlideView:
     :git: https://github.com/agdsdl/DLSlideView.git
 
 CHECKOUT OPTIONS:
+  AAInfographics:
+    :commit: f323b1cfc6e8ccdf64da177ef748565d3afb0747
+    :git: https://github.com/AAChartModel/AAChartKit-Swift.git
   DLSlideView:
     :commit: fc5f4f0be8b3c8849506ecb0e5282f6784c5f26e
     :git: https://github.com/agdsdl/DLSlideView.git
 
 SPEC CHECKSUMS:
+  AAInfographics: 10f87e06fc007a0adbb05de020e4a2fe3119f8de
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
   AlamofireNetworkActivityIndicator: 9acc3de3ca6645bf0efed462396b0df13dd3e7b8
   Atributika: 7b3631032cf11f2197b352343e0bd1b783d8ca88
@@ -62,6 +70,6 @@ SPEC CHECKSUMS:
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: 535172edb15d344887ab114821a0d50563bb3064
+PODFILE CHECKSUM: 1f54025897db702dabfac4305f2c873cb9d1083f
 
 COCOAPODS: 1.6.1

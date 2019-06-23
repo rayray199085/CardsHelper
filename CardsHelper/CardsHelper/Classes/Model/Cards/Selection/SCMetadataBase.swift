@@ -11,6 +11,7 @@ import UIKit
 class SCMetadataBase: NSObject {
     @objc var slug: String?
     @objc var name: String?
+    @objc var id: Int = 0
     
     var category: String{
         return ""

@@ -9,7 +9,6 @@
 import UIKit
 
 class SCMetadataMinionType: SCMetadataBase {
-    @objc var id: Int = 0
     override var category: String{
         return "minionType"
     }

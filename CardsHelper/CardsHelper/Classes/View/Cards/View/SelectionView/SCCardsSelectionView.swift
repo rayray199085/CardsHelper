@@ -117,7 +117,6 @@ extension SCCardsSelectionView: UITableViewDelegate, UITableViewDataSource{
             detailsItems = categories?[indexPath.row]["category"] as? [SCCardsDetailsItem]
         }else if tableView == detailsTableView{
             let cell = tableView.cellForRow(at: indexPath) as? SCCardsSelectionDetailsCell
-            
             guard let row = selectionTableView.indexPathForSelectedRow,
                 let selectionCell = selectionTableView.cellForRow(at: row) as? SCCardsSelectionOptionCell else{
                     return

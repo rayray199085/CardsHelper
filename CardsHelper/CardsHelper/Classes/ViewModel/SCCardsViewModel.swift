@@ -8,7 +8,7 @@
 
 import Foundation
 
-class SCCardsViewModel{
+class SCCardsViewModel: SCBaseViewModel{
     var categoryNames: [[String: Any?]]?
     
     var cards: [SCCardItem] = [SCCardItem]()
@@ -18,7 +18,7 @@ class SCCardsViewModel{
         }
     }
     
-    var metadata: SCMetadata?{
+    override var metadata: SCMetadata?{
         didSet{
             let setCategory = getCategories(defaultText: "All Cards", metaDataBase: metadata?.sets)
             let classCategory = getCategories(defaultText: "All Classes", metaDataBase: metadata?.classes)
@@ -39,24 +39,6 @@ class SCCardsViewModel{
                             ["name": "Minion Type", "category": minionTypeCategory],
                             ["name": "Keywords", "category": keywordCategory],
                             ["name":"Sort By","category": sortByCategory]]
-        }
-    }
-    init() {
-        
-    }
-    func loadMetadata(completion: @escaping (_ isSuccess: Bool)->()){
-        SCNetworkManager.shared.getMetadata { (dict, isSuccess) in
-            if !isSuccess{
-                completion(false)
-                return
-            }
-            guard let dict = dict,
-                  let metadata = SCMetadata.yy_model(with: dict) else{
-                completion(false)
-                return
-            }
-            self.metadata = metadata
-            completion(isSuccess)
         }
     }
 }
@@ -132,30 +114,7 @@ extension SCCardsViewModel{
             }
             group.notify(queue: DispatchQueue.main, execute: {
                 for card in self.cards{
-                    let clsRes = self.metadata?.classes?.filter({ (cls) -> Bool in
-                        return cls.id == card.classId
-                    })
-                    if clsRes?.count ?? 0 > 0{
-                        card.cardClassName = clsRes?[0].name
-                    }
-                    let typeRes = self.metadata?.types?.filter({ (type) -> Bool in
-                        return type.id == card.cardTypeId
-                    })
-                    if typeRes?.count ?? 0 > 0{
-                        card.cardTypeName = typeRes?[0].name
-                    }
-                    let setRes = self.metadata?.sets?.filter({ (set) -> Bool in
-                        return set.id == card.cardSetId
-                    })
-                    if setRes?.count ?? 0 > 0{
-                        card.cardSetName = setRes?[0].name
-                    }
-                    let rarRes = self.metadata?.rarities?.filter({ (rar) -> Bool in
-                        return rar.id == card.rarityId
-                    })
-                    if rarRes?.count ?? 0 > 0{
-                        card.cardRarityName = rarRes?[0].name
-                    }
+                   self.setCardCategoryName(card: card)
                 }
                 completion(isSuccess)
             })

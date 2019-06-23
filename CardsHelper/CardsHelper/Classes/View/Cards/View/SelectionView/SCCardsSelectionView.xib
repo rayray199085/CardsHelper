@@ -24,7 +24,7 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cdW-5i-Fw7">
+                <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cdW-5i-Fw7">
                     <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                     <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <connections>
@@ -315,7 +315,6 @@
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
-            <color key="backgroundColor" red="0.32156862745098036" green="0.25882352941176467" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
             <constraints>
                 <constraint firstItem="FFY-eF-ePN" firstAttribute="top" secondItem="ARd-hK-Aa1" secondAttribute="bottom" constant="13" id="0D7-Pp-XqF"/>
                 <constraint firstItem="yaz-KV-IUT" firstAttribute="leading" secondItem="ARd-hK-Aa1" secondAttribute="leading" id="2ml-eN-J9K"/>
