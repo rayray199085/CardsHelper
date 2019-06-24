@@ -9,8 +9,25 @@
 import UIKit
 
 class SCDeckStatsView: UIView {
-    private lazy var chart = SCDeckChartView(frame: chartView.bounds)
-    @IBOutlet weak var chartView: UIView!
+    private lazy var manaChart = SCDeckManaChartView(frame: manaChartView.bounds)
+    private lazy var typeChart = SCDeckTypeChartView(frame: typeChartView.bounds)
+    private lazy var rarityChart = SCDeckRarityChartView(frame: rarityChartView.bounds)
+    var chartData: SCChartData?{
+        didSet{
+            manaChart.chartData = chartData
+            typeChart.chartData = chartData
+            rarityChart.chartData = chartData
+            classLabel.text = "\(chartData?.cardClassName ?? "")"
+            dustCostLabel.text = "Dust cost: \(String.getLargeNumberWithCommas(num: chartData?.dustCost))"
+        }
+    }
+    
+    @IBOutlet weak var dustCostLabel: UILabel!
+    @IBOutlet weak var classLabel: UILabel!
+    
+    @IBOutlet weak var rarityChartView: UIView!
+    @IBOutlet weak var manaChartView: UIView!
+    @IBOutlet weak var typeChartView: UIView!
     
     class func statsView()->SCDeckStatsView{
         let nib = UINib(nibName: "SCDeckStatsView", bundle: nil)
@@ -21,7 +38,9 @@ class SCDeckStatsView: UIView {
     override func didMoveToWindow() {
         super.didMoveToWindow()
         layoutIfNeeded()
-        chartView.addSubview(chart)
+        manaChartView.addSubview(manaChart)
+        typeChartView.addSubview(typeChart)
+        rarityChartView.addSubview(rarityChart)
     }
 }
 extension SCDeckStatsView{
@@ -29,7 +48,6 @@ extension SCDeckStatsView{
         addPopVerticalAnimation(fromValue: -UIScreen.screenHeight() / 2, toValue: UIScreen.screenHeight() / 2, springBounciness: 6, springSpeed: 12, delay: 0) { (_, _) in
             completion()
         }
-        chart.chartData = [1,1,2,8,7,2,1,2]
     }
     func shrinkStatsView(completion:@escaping ()->()){
         addPopVerticalAnimation(fromValue: UIScreen.screenHeight() / 2, toValue: -UIScreen.screenHeight() / 2, springBounciness: 6, springSpeed: 12, delay: 0) { (_, _) in

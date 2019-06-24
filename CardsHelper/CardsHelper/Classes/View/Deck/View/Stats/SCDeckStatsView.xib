@@ -9,6 +9,11 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="OPTIBelwe-Medium.otf">
+            <string>OPTIBelwe-Medium</string>
+        </array>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -17,21 +22,55 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hb4-Y7-3Ba">
-                    <rect key="frame" x="0.0" y="44" width="414" height="300"/>
+                    <rect key="frame" x="0.0" y="98.5" width="414" height="349.5"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RPh-B6-Zh9">
+                    <rect key="frame" x="0.0" y="568.5" width="207" height="207"/>
                     <constraints>
-                        <constraint firstAttribute="width" secondItem="hb4-Y7-3Ba" secondAttribute="height" multiplier="69:50" id="jmJ-L5-L32"/>
+                        <constraint firstAttribute="width" secondItem="RPh-B6-Zh9" secondAttribute="height" multiplier="1:1" id="92v-gh-dzu"/>
                     </constraints>
                 </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b4L-FJ-N9R">
+                    <rect key="frame" x="207" y="568.5" width="207" height="207"/>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Class" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eRD-FB-6xy">
+                    <rect key="frame" x="180" y="44" width="54" height="25.5"/>
+                    <fontDescription key="fontDescription" name="OPTIBelwe-Medium" family="OPTIBelwe-Medium" pointSize="20"/>
+                    <color key="textColor" red="0.32156862749999998" green="0.25882352939999997" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dust cost: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qGC-tJ-1e1">
+                    <rect key="frame" x="161" y="72.5" width="92.5" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.28758722539999998" green="0.076255179940000001" blue="0.4706338048" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" red="0.90196078430000004" green="0.84313725490000002" blue="0.69019607839999997" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="centerX" secondItem="RPh-B6-Zh9" secondAttribute="trailing" id="4Y0-Uh-Fs3"/>
+                <constraint firstItem="qGC-tJ-1e1" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="5tP-qy-aIO"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="hb4-Y7-3Ba" secondAttribute="trailing" id="EHm-Pe-a1K"/>
-                <constraint firstItem="hb4-Y7-3Ba" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="Lc4-7G-ilr"/>
+                <constraint firstItem="eRD-FB-6xy" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="H4B-QA-j4j"/>
+                <constraint firstItem="b4L-FJ-N9R" firstAttribute="top" secondItem="RPh-B6-Zh9" secondAttribute="top" id="Iy1-TX-tzm"/>
+                <constraint firstItem="hb4-Y7-3Ba" firstAttribute="bottom" secondItem="iN0-l3-epB" secondAttribute="centerY" id="UO9-Fv-ccZ"/>
+                <constraint firstItem="RPh-B6-Zh9" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="UdF-Hl-asf"/>
                 <constraint firstItem="hb4-Y7-3Ba" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="b7x-LR-wc8"/>
+                <constraint firstItem="b4L-FJ-N9R" firstAttribute="height" secondItem="RPh-B6-Zh9" secondAttribute="height" id="fM9-6d-WbQ"/>
+                <constraint firstItem="b4L-FJ-N9R" firstAttribute="width" secondItem="RPh-B6-Zh9" secondAttribute="width" id="j8o-ss-Gss"/>
+                <constraint firstItem="b4L-FJ-N9R" firstAttribute="leading" secondItem="RPh-B6-Zh9" secondAttribute="trailing" id="l8C-Gw-ED9"/>
+                <constraint firstItem="RPh-B6-Zh9" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" multiplier="1.5" id="lRd-Fj-yhZ"/>
+                <constraint firstItem="hb4-Y7-3Ba" firstAttribute="top" secondItem="qGC-tJ-1e1" secondAttribute="bottom" constant="5" id="lU9-rR-jXk"/>
+                <constraint firstItem="qGC-tJ-1e1" firstAttribute="top" secondItem="eRD-FB-6xy" secondAttribute="bottom" constant="3" id="lVw-3b-H10"/>
+                <constraint firstItem="eRD-FB-6xy" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="sMI-8Z-laR"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <connections>
-                <outlet property="chartView" destination="hb4-Y7-3Ba" id="wCq-Fl-skE"/>
+                <outlet property="classLabel" destination="eRD-FB-6xy" id="EiL-5U-D8q"/>
+                <outlet property="dustCostLabel" destination="qGC-tJ-1e1" id="Azu-js-eZn"/>
+                <outlet property="manaChartView" destination="hb4-Y7-3Ba" id="wCq-Fl-skE"/>
+                <outlet property="rarityChartView" destination="b4L-FJ-N9R" id="G0D-ZR-s4X"/>
+                <outlet property="typeChartView" destination="RPh-B6-Zh9" id="nJV-d4-6RR"/>
             </connections>
             <point key="canvasLocation" x="47.826086956521742" y="35.491071428571423"/>
         </view>

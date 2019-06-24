@@ -20,6 +20,8 @@ class SCDeckViewController: SCBaseViewController {
     }()
     
     private var viewModel: SCDeckViewModel?
+    // for avoiding loading same content
+    private var prevDeckCode: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,7 +48,11 @@ class SCDeckViewController: SCBaseViewController {
         }
     }
     @objc private func clickAddButton(){
-        addDeckCodeView.isHidden = false
+        navigationItem.rightBarButtonItem?.isEnabled = false
+        addDeckCodeView.addPopAlphaAnimation(fromValue: 0.0, toValue: 1.0, duration: 0.25) { [weak self](_, _) in
+            self?.addDeckCodeView.isHidden = false
+            self?.navigationItem.rightBarButtonItem?.isEnabled = true
+        }
     }
 }
 private extension SCDeckViewController{
@@ -86,32 +92,37 @@ private extension SCDeckViewController{
 }
 extension SCDeckViewController: SCDeckAddDeckCodeViewDelegate{
     func didClickDeckMaskButton(view: SCDeckAddDeckCodeView, region: String, deckCode: String?, doesBothFieldFilled: Bool, completion: @escaping (Bool) -> ()) {
-        addDeckCodeView.isHidden = true
-        if doesBothFieldFilled{
-            SVProgressHUD.show()
-            viewModel?.loadDeckData(with: deckCode, region: region, completion: { [weak self](isSuccess) in
-                self?.viewMoreCards()
-                completion(isSuccess)
-                SVProgressHUD.dismiss()
-            })
-        }
-        else if deckCode == ""{
-            
-        }
-        else{
-           SVProgressHUD.showInfo(withStatus: "Nickname might be helpful to locate deck code.")
+        navigationItem.rightBarButtonItem?.isEnabled = false
+        addDeckCodeView.addPopAlphaAnimation(fromValue: 1.0, toValue: 0.0, duration: 0.25) { [weak self](_, _) in
+            self?.addDeckCodeView.isHidden = true
+            self?.navigationItem.rightBarButtonItem?.isEnabled = true
+            if self?.prevDeckCode == deckCode{
+                completion(false)
+                self?.addDeckCodeView.clearAllInput()
+                return
+            }
+            if doesBothFieldFilled{
+                SVProgressHUD.show()
+                self?.viewModel?.loadDeckData(with: deckCode, region: region, completion: { (isSuccess) in
+                    if !isSuccess{
+                        SVProgressHUD.showInfo(withStatus: "Invalid deck code, please check your input again.")
+                        completion(false)
+                        return
+                    }
+                    self?.viewMoreCards()
+                    completion(isSuccess)
+                    self?.prevDeckCode = deckCode
+                    self?.statsView.chartData = self?.viewModel?.chartData
+                    SVProgressHUD.dismiss()
+                })
+            }
+            else if !doesBothFieldFilled && deckCode != ""{
+                SVProgressHUD.showInfo(withStatus: "Nickname might be helpful to locate deck code.")
+            }
         }
     }
 }
 extension SCDeckViewController: SCCardsDisplayViewDelegate{
-    func didClickPrevButton(view: SCCardsDisplayView) {
-        
-    }
-    
-    func didClickNextButton(view: SCCardsDisplayView) {
-        
-    }
-    
     func didSelectCell(view: SCCardsDisplayView, centerPoint: CGPoint, image: UIImage?) {
         imageMaskView.isHidden = false
         imageMaskView.setImage(centerPoint: centerPoint, image: image)

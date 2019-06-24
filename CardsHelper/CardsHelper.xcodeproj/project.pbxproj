@@ -16,7 +16,7 @@
 		0D32FB8E22BA142200D187CB /* SCCardsSelectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D32FB8D22BA142200D187CB /* SCCardsSelectionView.xib */; };
 		0D3DEACF22BF04D1005F5972 /* SCDeckStatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3DEACE22BF04D1005F5972 /* SCDeckStatsView.swift */; };
 		0D3DEAD122BF04DF005F5972 /* SCDeckStatsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D3DEAD022BF04DF005F5972 /* SCDeckStatsView.xib */; };
-		0D3DEAD522BF0BFE005F5972 /* SCDeckChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3DEAD422BF0BFE005F5972 /* SCDeckChartView.swift */; };
+		0D3DEAD522BF0BFE005F5972 /* SCDeckManaChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3DEAD422BF0BFE005F5972 /* SCDeckManaChartView.swift */; };
 		0D3DEAD722BF201F005F5972 /* SCDeckViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3DEAD622BF201F005F5972 /* SCDeckViewModel.swift */; };
 		0D3DEADB22BF20B0005F5972 /* SCDeckData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3DEADA22BF20B0005F5972 /* SCDeckData.swift */; };
 		0D3DEAE022BF2F9F005F5972 /* SCBaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3DEADF22BF2F9F005F5972 /* SCBaseViewModel.swift */; };
@@ -81,6 +81,10 @@
 		0DAAA0F822BDA02200DF51B3 /* SCCardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DAAA0F722BDA02200DF51B3 /* SCCardTableViewCell.xib */; };
 		0DAAA0FB22BDF49400DF51B3 /* SCCardsMaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DAAA0FA22BDF49400DF51B3 /* SCCardsMaskView.swift */; };
 		0DAAA0FD22BDF4A500DF51B3 /* SCCardsMaskView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DAAA0FC22BDF4A500DF51B3 /* SCCardsMaskView.xib */; };
+		0DCCDEB822C041A5001923EA /* SCChartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCCDEB722C041A5001923EA /* SCChartData.swift */; };
+		0DCCDEBA22C050C5001923EA /* SCDeckTypeChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCCDEB922C050C5001923EA /* SCDeckTypeChartView.swift */; };
+		0DCCDEBC22C066DE001923EA /* SCDeckRarityChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCCDEBB22C066DE001923EA /* SCDeckRarityChartView.swift */; };
+		0DCCDEC222C09D85001923EA /* SCMetadataNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCCDEC122C09D85001923EA /* SCMetadataNumber.swift */; };
 		0DD10E8822BAFA8600DC77D1 /* SCCardsSelectionOptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD10E8722BAFA8600DC77D1 /* SCCardsSelectionOptionCell.swift */; };
 		0DD10E8A22BAFAA500DC77D1 /* SCCardsSelectionOptionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DD10E8922BAFAA500DC77D1 /* SCCardsSelectionOptionCell.xib */; };
 		0DD10E8C22BB137600DC77D1 /* SCCardsSelectionDetailsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD10E8B22BB137600DC77D1 /* SCCardsSelectionDetailsCell.swift */; };
@@ -127,7 +131,7 @@
 		0D32FB8D22BA142200D187CB /* SCCardsSelectionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SCCardsSelectionView.xib; sourceTree = "<group>"; };
 		0D3DEACE22BF04D1005F5972 /* SCDeckStatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCDeckStatsView.swift; sourceTree = "<group>"; };
 		0D3DEAD022BF04DF005F5972 /* SCDeckStatsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SCDeckStatsView.xib; sourceTree = "<group>"; };
-		0D3DEAD422BF0BFE005F5972 /* SCDeckChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCDeckChartView.swift; sourceTree = "<group>"; };
+		0D3DEAD422BF0BFE005F5972 /* SCDeckManaChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCDeckManaChartView.swift; sourceTree = "<group>"; };
 		0D3DEAD622BF201F005F5972 /* SCDeckViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCDeckViewModel.swift; sourceTree = "<group>"; };
 		0D3DEADA22BF20B0005F5972 /* SCDeckData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCDeckData.swift; sourceTree = "<group>"; };
 		0D3DEADF22BF2F9F005F5972 /* SCBaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCBaseViewModel.swift; sourceTree = "<group>"; };
@@ -208,6 +212,10 @@
 		0DAAA0F722BDA02200DF51B3 /* SCCardTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SCCardTableViewCell.xib; sourceTree = "<group>"; };
 		0DAAA0FA22BDF49400DF51B3 /* SCCardsMaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCCardsMaskView.swift; sourceTree = "<group>"; };
 		0DAAA0FC22BDF4A500DF51B3 /* SCCardsMaskView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SCCardsMaskView.xib; sourceTree = "<group>"; };
+		0DCCDEB722C041A5001923EA /* SCChartData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCChartData.swift; sourceTree = "<group>"; };
+		0DCCDEB922C050C5001923EA /* SCDeckTypeChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCDeckTypeChartView.swift; sourceTree = "<group>"; };
+		0DCCDEBB22C066DE001923EA /* SCDeckRarityChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCDeckRarityChartView.swift; sourceTree = "<group>"; };
+		0DCCDEC122C09D85001923EA /* SCMetadataNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCMetadataNumber.swift; sourceTree = "<group>"; };
 		0DD10E8722BAFA8600DC77D1 /* SCCardsSelectionOptionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCCardsSelectionOptionCell.swift; sourceTree = "<group>"; };
 		0DD10E8922BAFAA500DC77D1 /* SCCardsSelectionOptionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SCCardsSelectionOptionCell.xib; sourceTree = "<group>"; };
 		0DD10E8B22BB137600DC77D1 /* SCCardsSelectionDetailsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCCardsSelectionDetailsCell.swift; sourceTree = "<group>"; };
@@ -290,9 +298,12 @@
 		0D3DEAE122BF338C005F5972 /* Stats */ = {
 			isa = PBXGroup;
 			children = (
+				0DCCDEB622C0418B001923EA /* Model */,
 				0D3DEACE22BF04D1005F5972 /* SCDeckStatsView.swift */,
 				0D3DEAD022BF04DF005F5972 /* SCDeckStatsView.xib */,
-				0D3DEAD422BF0BFE005F5972 /* SCDeckChartView.swift */,
+				0D3DEAD422BF0BFE005F5972 /* SCDeckManaChartView.swift */,
+				0DCCDEB922C050C5001923EA /* SCDeckTypeChartView.swift */,
+				0DCCDEBB22C066DE001923EA /* SCDeckRarityChartView.swift */,
 			);
 			path = Stats;
 			sourceTree = "<group>";
@@ -620,6 +631,7 @@
 				0DD10E9C22BB1FA500DC77D1 /* SCMetadataMinionType.swift */,
 				0DD10E9E22BB203B00DC77D1 /* SCMetadataKeyword.swift */,
 				0DD10EA422BB473000DC77D1 /* SCMetadataBase.swift */,
+				0DCCDEC122C09D85001923EA /* SCMetadataNumber.swift */,
 			);
 			path = Selection;
 			sourceTree = "<group>";
@@ -640,6 +652,14 @@
 				0DAAA0FC22BDF4A500DF51B3 /* SCCardsMaskView.xib */,
 			);
 			path = MaskView;
+			sourceTree = "<group>";
+		};
+		0DCCDEB622C0418B001923EA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0DCCDEB722C041A5001923EA /* SCChartData.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		0DD10E8622BAFA4600DC77D1 /* View */ = {
@@ -905,7 +925,7 @@
 				0D3DEAE422BF33DB005F5972 /* SCDeckAddDeckCodeView.swift in Sources */,
 				0DD10E8C22BB137600DC77D1 /* SCCardsSelectionDetailsCell.swift in Sources */,
 				0DD10E9922BB1E6600DC77D1 /* SCMetadataRarity.swift in Sources */,
-				0D3DEAD522BF0BFE005F5972 /* SCDeckChartView.swift in Sources */,
+				0D3DEAD522BF0BFE005F5972 /* SCDeckManaChartView.swift in Sources */,
 				0D56556822B8659700406055 /* CABasicAnimation+SCAddition.m in Sources */,
 				0D56558122B86D1F00406055 /* SCUserAccount.swift in Sources */,
 				0D56556A22B8659700406055 /* UIColor+SCAddition.m in Sources */,
@@ -920,6 +940,7 @@
 				0D56555A22B8659700406055 /* UITableViewCell+extension.swift in Sources */,
 				0DAAA0FB22BDF49400DF51B3 /* SCCardsMaskView.swift in Sources */,
 				0DD10E9722BB1DEA00DC77D1 /* SCMetadataType.swift in Sources */,
+				0DCCDEBC22C066DE001923EA /* SCDeckRarityChartView.swift in Sources */,
 				0D56557822B8693800406055 /* SCMainViewController.swift in Sources */,
 				0D56554C22B8659700406055 /* UIApplication+extension.swift in Sources */,
 				0DD10E9B22BB1F1A00DC77D1 /* SCMetadaClass.swift in Sources */,
@@ -931,14 +952,17 @@
 				0D32FB8722B9ED3800D187CB /* SCVisitorView.swift in Sources */,
 				0D92218C22BC58F60052D91D /* SCCardsManaView.swift in Sources */,
 				0D56556722B8659700406055 /* UIScreen+UISCreen_extenshion.m in Sources */,
+				0DCCDEB822C041A5001923EA /* SCChartData.swift in Sources */,
 				0D56555E22B8659700406055 /* UITableView+extension.swift in Sources */,
 				0D56555322B8659700406055 /* UIView+extension.swift in Sources */,
 				0D56554E22B8659700406055 /* NSAttributedString+extension.swift in Sources */,
 				0D56555B22B8659700406055 /* WKWebView+extension.swift in Sources */,
+				0DCCDEC222C09D85001923EA /* SCMetadataNumber.swift in Sources */,
 				0DD10EA522BB473000DC77D1 /* SCMetadataBase.swift in Sources */,
 				0D3DEADB22BF20B0005F5972 /* SCDeckData.swift in Sources */,
 				0D56555422B8659700406055 /* UIImage+extension.swift in Sources */,
 				0D3DEACF22BF04D1005F5972 /* SCDeckStatsView.swift in Sources */,
+				0DCCDEBA22C050C5001923EA /* SCDeckTypeChartView.swift in Sources */,
 				0D56556322B8659700406055 /* UIButton+SCAddition.m in Sources */,
 				0D56555622B8659700406055 /* Bundle+extension.swift in Sources */,
 				0DD10EA322BB216D00DC77D1 /* SCCardsViewModel.swift in Sources */,
@@ -1132,6 +1156,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3CB5U428B8;
 				INFOPLIST_FILE = CardsHelper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1151,6 +1176,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3CB5U428B8;
 				INFOPLIST_FILE = CardsHelper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

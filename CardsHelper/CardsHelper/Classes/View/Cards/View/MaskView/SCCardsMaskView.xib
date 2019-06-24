@@ -24,21 +24,20 @@
                     </connections>
                 </button>
                 <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fE7-cS-Sam">
-                    <rect key="frame" x="5" y="169" width="404" height="558"/>
+                    <rect key="frame" x="19.5" y="189" width="375" height="518"/>
                     <constraints>
-                        <constraint firstAttribute="width" secondItem="fE7-cS-Sam" secondAttribute="height" multiplier="375:518" id="H3y-D2-Ed8"/>
+                        <constraint firstAttribute="height" constant="518" id="Ex5-xF-v6c"/>
+                        <constraint firstAttribute="width" constant="375" id="Rfg-m2-Vdo"/>
                     </constraints>
                 </imageView>
             </subviews>
             <constraints>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="fCk-Bn-PnK" secondAttribute="trailing" id="3s5-4p-hS0"/>
                 <constraint firstAttribute="bottom" secondItem="fCk-Bn-PnK" secondAttribute="bottom" id="CTt-MQ-cJ9"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="fE7-cS-Sam" secondAttribute="trailing" constant="5" id="O8A-v6-2U6"/>
                 <constraint firstItem="fCk-Bn-PnK" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="O8k-XF-zSm"/>
                 <constraint firstItem="fCk-Bn-PnK" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Qb8-as-zqq"/>
                 <constraint firstItem="fE7-cS-Sam" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="WP8-2d-xg8"/>
                 <constraint firstItem="fE7-cS-Sam" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="djY-Hw-lDN"/>
-                <constraint firstItem="fE7-cS-Sam" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="5" id="e1a-5m-8ny"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <connections>

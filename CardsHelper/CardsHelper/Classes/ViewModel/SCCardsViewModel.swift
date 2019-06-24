@@ -114,7 +114,8 @@ extension SCCardsViewModel{
             }
             group.notify(queue: DispatchQueue.main, execute: {
                 for card in self.cards{
-                   self.setCardCategoryName(card: card)
+                    self.setCardCategoryName(card: card)
+                    self.getCardCraftingCostAndDustValue(card: card)
                 }
                 completion(isSuccess)
             })

@@ -78,10 +78,13 @@ extension SCNetworkManager{
 }
 extension SCNetworkManager{
     func getDeckData(with deckCode: String, region: String, completion:@escaping (_ dict: [String: Any]?, _ isSuccess: Bool)->()){
-        //AQcG+wyd8AKS+AKggAOblAPanQMMS6IE/web8wLR9QKD+wKe+wKz/AL1gAOXlAOalAOSnwMA
         let urlString = "https://\(region).api.blizzard.com/hearthstone/deck/\(deckCode)?locale=en_US"
         requestWithToken(urlString: urlString, method: HTTPMethod.get, params: nil) { (res, isSuccess) in
             let dict = res as? [String: Any]
+            if dict?["error"] != nil{
+                completion(nil, false)
+                return 
+            }
             completion(dict, isSuccess)
         }
     }

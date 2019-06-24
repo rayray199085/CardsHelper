@@ -8,10 +8,10 @@
 
 import UIKit
 private let reuseIdentifer = "card_cell"
-protocol SCCardsDisplayViewDelegate: NSObjectProtocol {
-    func didClickPrevButton(view: SCCardsDisplayView)
-    func didClickNextButton(view: SCCardsDisplayView)
-    func didSelectCell(view: SCCardsDisplayView, centerPoint: CGPoint, image: UIImage?)
+@objc protocol SCCardsDisplayViewDelegate: NSObjectProtocol {
+    @objc optional func didClickPrevButton(view: SCCardsDisplayView)
+    @objc optional func didClickNextButton(view: SCCardsDisplayView)
+    @objc optional func didSelectCell(view: SCCardsDisplayView, centerPoint: CGPoint, image: UIImage?)
 }
 class SCCardsDisplayView: UIView {
     var cards: [SCCardItem]?{
@@ -34,6 +34,7 @@ class SCCardsDisplayView: UIView {
     }
     
     func updateDirectionButtonDisplay(currentPage: Int, pageCount: Int) {
+        tableViewTopCons.constant = pageCount > 1 ? 53 : 5
         if currentPage == 1{
             directionButtons.first?.isHidden = true
             directionButtons.last?.isHidden = pageCount <= 1
@@ -51,7 +52,7 @@ class SCCardsDisplayView: UIView {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(UINib(nibName: "SCCardTableViewCell", bundle: nil), forCellReuseIdentifier: reuseIdentifer)
-        tableView.rowHeight = 199
+        tableView.rowHeight = 240
         tableView.separatorStyle = .none
     }
     
@@ -60,10 +61,10 @@ class SCCardsDisplayView: UIView {
     @IBOutlet weak var tableView: UITableView!
     
     @IBAction func clickPrevPageButton(_ sender: UIButton) {
-        delegate?.didClickPrevButton(view: self)
+        delegate?.didClickPrevButton?(view: self)
     }
     @IBAction func clickNextPageButton(_ sender: UIButton) {
-        delegate?.didClickNextButton(view: self)
+        delegate?.didClickNextButton?(view: self)
     }
 }
 extension SCCardsDisplayView: UITableViewDelegate, UITableViewDataSource{
@@ -80,6 +81,6 @@ extension SCCardsDisplayView: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let cell = tableView.cellForRow(at: indexPath) as! SCCardTableViewCell
         let imageViewCenterPoint = convert(cell.cardImageView.center, from: cell.contentView)
-        delegate?.didSelectCell(view: self, centerPoint: imageViewCenterPoint, image: cards?[indexPath.row].cardImage)
+        delegate?.didSelectCell?(view: self, centerPoint: imageViewCenterPoint, image: cards?[indexPath.row].cardImage)
     }
 }

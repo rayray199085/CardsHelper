@@ -116,3 +116,14 @@ extension String{
         return (self as NSString).sizeOfText(withMaxSize: size, andWith: font).height
     }
 }
+extension String{
+    static func getLargeNumberWithCommas(num: Int?)->String{
+        guard let num = num else{
+            return "0"
+        }
+        let numberFormatter = NumberFormatter()
+        numberFormatter.numberStyle = .decimal
+        let formattedNumber = numberFormatter.string(from: NSNumber(value: num))
+        return formattedNumber ?? "0"
+    }
+}

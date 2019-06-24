@@ -25,6 +25,22 @@ class SCCardItem: NSObject {
     @objc var name: String?
     @objc var rarityId: Int = 0
     @objc var cardRarityName: String?
+    @objc var cardDustValue: [NSObject]?
+    @objc var cardCraftingCost: [NSObject]?
+    
+    var dustValue: [Int]{
+        if cardDustValue == nil{
+            return [0,0]
+        }
+        return cardDustValue as! [Int]
+    }
+    
+    var craftingCost:[Int]{
+        if cardCraftingCost == nil{
+            return [0,0]
+        }
+        return cardCraftingCost as! [Int]
+    }
     @objc var slug: String?
     @objc var text: String?
     
