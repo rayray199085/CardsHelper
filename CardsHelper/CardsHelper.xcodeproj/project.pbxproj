@@ -1155,6 +1155,7 @@
 			baseConfigurationReference = 02F1E2202841B0F08BF5A8B3 /* Pods-CardsHelper.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3CB5U428B8;
 				INFOPLIST_FILE = CardsHelper/Info.plist;
@@ -1175,6 +1176,7 @@
 			baseConfigurationReference = 3D1D58AD7AE9EF85C4A9BA2A /* Pods-CardsHelper.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3CB5U428B8;
 				INFOPLIST_FILE = CardsHelper/Info.plist;
