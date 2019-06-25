@@ -20,6 +20,7 @@ class SCCardsDisplayView: UIView {
         }
     }
     
+    @IBOutlet weak var titleBarImageView: UIImageView!
     @IBOutlet weak var tableViewTopCons: NSLayoutConstraint!
     weak var delegate: SCCardsDisplayViewDelegate?
     
@@ -45,6 +46,7 @@ class SCCardsDisplayView: UIView {
             directionButtons.first?.isHidden = false
             directionButtons.last?.isHidden = false
         }
+        titleBarImageView.isHidden = directionButtons.first!.isHidden && directionButtons.last!.isHidden
     }
     
     override func awakeFromNib() {

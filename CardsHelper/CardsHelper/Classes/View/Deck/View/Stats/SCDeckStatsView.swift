@@ -19,9 +19,11 @@ class SCDeckStatsView: UIView {
             rarityChart.chartData = chartData
             classLabel.text = "\(chartData?.cardClassName ?? "")"
             dustCostLabel.text = "Dust cost: \(String.getLargeNumberWithCommas(num: chartData?.dustCost))"
+            classIconImageView.image = UIImage(named: chartData?.cardClassName ?? "classes")
         }
     }
     
+    @IBOutlet weak var classIconImageView: UIImageView!
     @IBOutlet weak var dustCostLabel: UILabel!
     @IBOutlet weak var classLabel: UILabel!
     

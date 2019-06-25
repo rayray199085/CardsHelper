@@ -21,11 +21,17 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kzf-W1-4Bw" userLabel="left button">
-                    <rect key="frame" x="5" y="49" width="57" height="48"/>
+                <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="selection_bg" translatesAutoresizingMaskIntoConstraints="NO" id="whJ-nx-L2Z">
+                    <rect key="frame" x="0.0" y="44" width="414" height="48"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="57" id="PqD-gt-gxD"/>
-                        <constraint firstAttribute="height" constant="48" id="pg5-bb-olm"/>
+                        <constraint firstAttribute="height" constant="48" id="x1G-SK-7eZ"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kzf-W1-4Bw" userLabel="left button">
+                    <rect key="frame" x="5" y="50" width="43" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="43" id="PqD-gt-gxD"/>
+                        <constraint firstAttribute="height" constant="36" id="pg5-bb-olm"/>
                     </constraints>
                     <state key="normal" backgroundImage="prev_page"/>
                     <connections>
@@ -33,20 +39,20 @@
                     </connections>
                 </button>
                 <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HB3-6c-IW3" userLabel="right button">
-                    <rect key="frame" x="352" y="49" width="57" height="48"/>
+                    <rect key="frame" x="366" y="50" width="43" height="36"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="57" id="8kD-5u-uMc"/>
-                        <constraint firstAttribute="height" constant="48" id="9Tq-jQ-wY4"/>
+                        <constraint firstAttribute="width" constant="43" id="8kD-5u-uMc"/>
+                        <constraint firstAttribute="height" constant="36" id="9Tq-jQ-wY4"/>
                     </constraints>
                     <state key="normal" backgroundImage="next_page"/>
                     <connections>
                         <action selector="clickNextPageButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="MP2-ZZ-Obc"/>
                     </connections>
                 </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GO2-Pk-R8M">
-                    <rect key="frame" x="207" y="73" width="0.0" height="0.0"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 / 51" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GO2-Pk-R8M">
+                    <rect key="frame" x="161" y="45" width="92.5" height="46"/>
                     <fontDescription key="fontDescription" name="JandaManateeBubble" family="Janda Manatee Bubble" pointSize="30"/>
-                    <color key="textColor" red="0.28758722539999998" green="0.076255179940000001" blue="0.4706338048" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <color key="textColor" red="0.90196078430000004" green="0.84313725490000002" blue="0.69019607839999997" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="p6e-tE-hvo">
@@ -56,15 +62,18 @@
             </subviews>
             <color key="backgroundColor" red="0.90196078431372551" green="0.84313725490196079" blue="0.69019607843137254" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
+                <constraint firstItem="whJ-nx-L2Z" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="8Xo-Af-wgg"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="p6e-tE-hvo" secondAttribute="bottom" id="HNa-UL-xCf"/>
+                <constraint firstItem="kzf-W1-4Bw" firstAttribute="centerY" secondItem="whJ-nx-L2Z" secondAttribute="centerY" id="IRK-jB-laT"/>
                 <constraint firstItem="GO2-Pk-R8M" firstAttribute="centerY" secondItem="kzf-W1-4Bw" secondAttribute="centerY" id="NrQ-Fz-imK"/>
-                <constraint firstItem="HB3-6c-IW3" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="5" id="PjI-zd-3Hj"/>
                 <constraint firstItem="p6e-tE-hvo" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="VGv-F6-OZN"/>
-                <constraint firstItem="kzf-W1-4Bw" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="5" id="cYa-W1-bMd"/>
+                <constraint firstItem="whJ-nx-L2Z" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="VVb-Tk-NHo"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="p6e-tE-hvo" secondAttribute="trailing" id="dmx-Ja-w0H"/>
+                <constraint firstItem="whJ-nx-L2Z" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="fU3-1k-NEg"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="HB3-6c-IW3" secondAttribute="trailing" constant="5" id="i1K-Lj-ROe"/>
                 <constraint firstItem="p6e-tE-hvo" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="53" id="irL-n8-PO4"/>
                 <constraint firstItem="GO2-Pk-R8M" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="o0C-gp-l5e"/>
+                <constraint firstItem="HB3-6c-IW3" firstAttribute="centerY" secondItem="kzf-W1-4Bw" secondAttribute="centerY" id="yW8-Zw-KtE"/>
                 <constraint firstItem="kzf-W1-4Bw" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="5" id="zWe-8H-d3B"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
@@ -72,13 +81,16 @@
                 <outlet property="pageCountLabel" destination="GO2-Pk-R8M" id="yBC-ca-oaV"/>
                 <outlet property="tableView" destination="p6e-tE-hvo" id="UCV-RW-efa"/>
                 <outlet property="tableViewTopCons" destination="irL-n8-PO4" id="WKZ-1r-r4T"/>
+                <outlet property="titleBarImageView" destination="whJ-nx-L2Z" id="dIx-rh-AcN"/>
                 <outletCollection property="directionButtons" destination="kzf-W1-4Bw" collectionClass="NSMutableArray" id="1sl-rL-buV"/>
                 <outletCollection property="directionButtons" destination="HB3-6c-IW3" collectionClass="NSMutableArray" id="rtr-IC-a5d"/>
             </connections>
+            <point key="canvasLocation" x="-20.289855072463769" y="35.491071428571423"/>
         </view>
     </objects>
     <resources>
         <image name="next_page" width="28.5" height="24"/>
         <image name="prev_page" width="28.5" height="24"/>
+        <image name="selection_bg" width="400" height="159"/>
     </resources>
 </document>
