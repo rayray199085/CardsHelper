@@ -38,11 +38,13 @@ class SCCardsViewController: SCBaseViewController {
             prevParams = params
         }
         params?["page"] = "\(currentPage)"
+        displayView.disableDirectionButtons()
         SVProgressHUD.show()
         viewModel?.loadCards(params: params!, completion: { [weak self](_) in
             SVProgressHUD.dismiss()
             self?.updateDisplayViewContent()
             self?.viewMoreCards()
+            self?.displayView.enableDirectionButtons()
         })
     }
 
@@ -107,7 +109,7 @@ extension SCCardsViewController: SCCardsDisplayViewDelegate{
             return
         }
         currentPage -= 1
-        viewMoreCards()
+        loadMoreCards()
     }
     
     func didClickNextButton(view: SCCardsDisplayView) {
@@ -115,11 +117,7 @@ extension SCCardsViewController: SCCardsDisplayViewDelegate{
             return
         }
         currentPage += 1
-        if currentPage * 40 <= viewModel?.cards.count ?? 0{
-            viewMoreCards()
-        }else{
-            loadMoreCards()
-        }
+        loadMoreCards()
     }
 }
 private extension SCCardsViewController{
@@ -135,9 +133,7 @@ private extension SCCardsViewController{
         guard let array = viewModel?.cards else{
             return
         }
-        let remaining = array.count - (currentPage - 1) * 40
-        let length = remaining >= 40 ? 40 : remaining
-        displayView.cards = (array as NSArray).subarray(with: NSRange(location: (currentPage - 1) * 40, length: length)) as? [SCCardItem]
+        displayView.cards = array
         displayView.tableView.scroll(to: UITableView.scrollsTo.top, animated: true)
     }
 }

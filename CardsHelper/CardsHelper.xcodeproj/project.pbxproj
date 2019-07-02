@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D10A0A322C1C73900B0DAF0 /* SCMoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D10A0A222C1C73900B0DAF0 /* SCMoreTableViewCell.swift */; };
+		0D10A0A522C1C74A00B0DAF0 /* SCMoreTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D10A0A422C1C74A00B0DAF0 /* SCMoreTableViewCell.xib */; };
 		0D32FB7422B9A72900D187CB /* main.json in Resources */ = {isa = PBXBuildFile; fileRef = 0D32FB7322B9A72900D187CB /* main.json */; };
 		0D32FB7C22B9B41100D187CB /* OPTIBelwe-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0D32FB7A22B9B3FD00D187CB /* OPTIBelwe-Medium.otf */; };
 		0D32FB8222B9C36C00D187CB /* MXCornerRadius.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D32FB8122B9C36C00D187CB /* MXCornerRadius.m */; };
@@ -121,6 +123,8 @@
 
 /* Begin PBXFileReference section */
 		02F1E2202841B0F08BF5A8B3 /* Pods-CardsHelper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CardsHelper.debug.xcconfig"; path = "Target Support Files/Pods-CardsHelper/Pods-CardsHelper.debug.xcconfig"; sourceTree = "<group>"; };
+		0D10A0A222C1C73900B0DAF0 /* SCMoreTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCMoreTableViewCell.swift; sourceTree = "<group>"; };
+		0D10A0A422C1C74A00B0DAF0 /* SCMoreTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SCMoreTableViewCell.xib; sourceTree = "<group>"; };
 		0D32FB7322B9A72900D187CB /* main.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = main.json; sourceTree = "<group>"; };
 		0D32FB7A22B9B3FD00D187CB /* OPTIBelwe-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OPTIBelwe-Medium.otf"; sourceTree = "<group>"; };
 		0D32FB8022B9C36C00D187CB /* MXCornerRadius.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXCornerRadius.h; sourceTree = "<group>"; };
@@ -582,6 +586,8 @@
 			isa = PBXGroup;
 			children = (
 				0D56558C22B887D100406055 /* SCMoreViewController.swift */,
+				0D10A0A222C1C73900B0DAF0 /* SCMoreTableViewCell.swift */,
+				0D10A0A422C1C74A00B0DAF0 /* SCMoreTableViewCell.xib */,
 			);
 			path = More;
 			sourceTree = "<group>";
@@ -809,6 +815,7 @@
 				0D92218A22BC4F2B0052D91D /* JandaManateeBubble.ttf in Resources */,
 				0DAAA0FD22BDF4A500DF51B3 /* SCCardsMaskView.xib in Resources */,
 				0D32FB7C22B9B41100D187CB /* OPTIBelwe-Medium.otf in Resources */,
+				0D10A0A522C1C74A00B0DAF0 /* SCMoreTableViewCell.xib in Resources */,
 				0D92219622BCA5DF0052D91D /* SCCardsDisplayView.xib in Resources */,
 				0D32FB7422B9A72900D187CB /* main.json in Resources */,
 				0DAAA0F822BDA02200DF51B3 /* SCCardTableViewCell.xib in Resources */,
@@ -853,10 +860,7 @@
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireNetworkActivityIndicator/AlamofireNetworkActivityIndicator.framework",
 				"${BUILT_PRODUCTS_DIR}/Atributika/Atributika.framework",
-				"${BUILT_PRODUCTS_DIR}/DLSlideView/DLSlideView.framework",
 				"${BUILT_PRODUCTS_DIR}/DropDown/DropDown.framework",
-				"${BUILT_PRODUCTS_DIR}/FBRetainCycleDetector/FBRetainCycleDetector.framework",
-				"${BUILT_PRODUCTS_DIR}/MLeaksFinder/MLeaksFinder.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/YYModel/YYModel.framework",
@@ -870,10 +874,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireNetworkActivityIndicator.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Atributika.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DLSlideView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DropDown.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBRetainCycleDetector.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MLeaksFinder.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYModel.framework",
@@ -977,6 +978,7 @@
 				0D56555922B8659700406055 /* String+extension.swift in Sources */,
 				0D56558922B887A300406055 /* SCDeckViewController.swift in Sources */,
 				0D5654EC22B8648500406055 /* AppDelegate.swift in Sources */,
+				0D10A0A322C1C73900B0DAF0 /* SCMoreTableViewCell.swift in Sources */,
 				0D56557C22B8699C00406055 /* HelperCommonValues.swift in Sources */,
 				0D56558D22B887D100406055 /* SCMoreViewController.swift in Sources */,
 				0DD10E9F22BB203B00DC77D1 /* SCMetadataKeyword.swift in Sources */,
@@ -1156,7 +1158,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Rui Cao (3CB5U428B8)";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 3CB5U428B8;
 				INFOPLIST_FILE = CardsHelper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1165,6 +1168,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.stephencao.project.CardsHelper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "Cards Helper for Hearthstone";
 				SWIFT_OBJC_BRIDGING_HEADER = "CardsHelper/Helper-Bridge.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1177,7 +1181,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Rui Cao (3CB5U428B8)";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 3CB5U428B8;
 				INFOPLIST_FILE = CardsHelper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1186,6 +1191,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.stephencao.project.CardsHelper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "Cards Helper for Hearthstone";
 				SWIFT_OBJC_BRIDGING_HEADER = "CardsHelper/Helper-Bridge.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OPTIBelwe-Medium.otf">
+            <string>OPTIBelwe-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="150" id="zec-Ii-214" customClass="SCMoreTableViewCell" customModule="CardsHelper" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="110"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zec-Ii-214" id="Qbs-wB-ggq">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="109.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="whole_selection_bg" translatesAutoresizingMaskIntoConstraints="NO" id="GKM-2F-uo3">
+                        <rect key="frame" x="0.0" y="5" width="414" height="100"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="100" id="vqi-9r-ofD"/>
+                        </constraints>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="btn_rate" translatesAutoresizingMaskIntoConstraints="NO" id="R3b-yt-U0G">
+                        <rect key="frame" x="6" y="31" width="48" height="48"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="48" id="bFd-OB-9fZ"/>
+                            <constraint firstAttribute="width" constant="48" id="wkQ-4t-67H"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rate us" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eBB-p7-PB3">
+                        <rect key="frame" x="59" y="8" width="61" height="21.5"/>
+                        <fontDescription key="fontDescription" name="OPTIBelwe-Medium" family="OPTIBelwe-Medium" pointSize="17"/>
+                        <color key="textColor" red="0.96862745100000003" green="0.81960784310000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k2D-w9-wpf">
+                        <rect key="frame" x="59" y="29.5" width="349" height="54"/>
+                        <string key="text">We'd love to hear your feedback, whether you've got ideas on how we can improve - and would really appreciate it if you rate us on the App Store.</string>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="GKM-2F-uo3" firstAttribute="centerY" secondItem="Qbs-wB-ggq" secondAttribute="centerY" id="1W9-hV-rw5"/>
+                    <constraint firstItem="eBB-p7-PB3" firstAttribute="top" secondItem="GKM-2F-uo3" secondAttribute="top" constant="3" id="3tg-cI-aiL"/>
+                    <constraint firstItem="R3b-yt-U0G" firstAttribute="leading" secondItem="GKM-2F-uo3" secondAttribute="leading" constant="6" id="423-yT-GEQ"/>
+                    <constraint firstItem="R3b-yt-U0G" firstAttribute="centerY" secondItem="GKM-2F-uo3" secondAttribute="centerY" id="4sv-lq-x81"/>
+                    <constraint firstItem="k2D-w9-wpf" firstAttribute="top" secondItem="eBB-p7-PB3" secondAttribute="bottom" id="Eru-VT-dba"/>
+                    <constraint firstItem="k2D-w9-wpf" firstAttribute="leading" secondItem="eBB-p7-PB3" secondAttribute="leading" id="Ggv-rR-oEU"/>
+                    <constraint firstItem="GKM-2F-uo3" firstAttribute="leading" secondItem="Qbs-wB-ggq" secondAttribute="leading" id="mQN-fu-dcS"/>
+                    <constraint firstAttribute="trailing" secondItem="GKM-2F-uo3" secondAttribute="trailing" id="nkf-Mu-OLE"/>
+                    <constraint firstItem="eBB-p7-PB3" firstAttribute="leading" secondItem="R3b-yt-U0G" secondAttribute="trailing" constant="5" id="p87-eg-opR"/>
+                    <constraint firstItem="k2D-w9-wpf" firstAttribute="trailing" secondItem="GKM-2F-uo3" secondAttribute="trailing" constant="-6" id="vqR-Q9-XGn"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="iconImageView" destination="R3b-yt-U0G" id="vCf-ci-BUc"/>
+                <outlet property="titleContentLabel" destination="k2D-w9-wpf" id="UaC-Ce-Pbs"/>
+                <outlet property="titleNameLabel" destination="eBB-p7-PB3" id="AIo-jD-jSW"/>
+            </connections>
+            <point key="canvasLocation" x="339.13043478260875" y="164.73214285714286"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="btn_rate" width="32" height="32"/>
+        <image name="whole_selection_bg" width="159.5" height="160"/>
+    </resources>
+</document>

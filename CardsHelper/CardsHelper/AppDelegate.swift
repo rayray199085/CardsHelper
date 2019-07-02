@@ -9,6 +9,7 @@
 import UIKit
 import AlamofireNetworkActivityIndicator
 import SVProgressHUD
+import SDWebImage
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -20,6 +21,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow.initWindow(controllerName: "SCMainViewController")
         window?.backgroundColor = UIColor.white
         return true
+    }
+    func applicationDidReceiveMemoryWarning(_ application: UIApplication) {
+        SDImageCache.shared.clearMemory()
+        SDImageCache.shared.clearDisk()
     }
 }
 private extension AppDelegate{

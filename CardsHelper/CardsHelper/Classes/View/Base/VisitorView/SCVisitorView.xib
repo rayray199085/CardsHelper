@@ -16,7 +16,7 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SX5-G0-xtB">
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cardsHelper_screenshot_01" translatesAutoresizingMaskIntoConstraints="NO" id="SX5-G0-xtB">
                     <rect key="frame" x="32" y="223" width="350" height="450"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="450" id="8dZ-XX-HAE"/>
@@ -45,4 +45,7 @@
             <point key="canvasLocation" x="42" y="159"/>
         </view>
     </objects>
+    <resources>
+        <image name="cardsHelper_screenshot_01" width="665" height="920"/>
+    </resources>
 </document>

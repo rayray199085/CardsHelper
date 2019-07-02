@@ -14,7 +14,8 @@ class SCCardsViewModel: SCBaseViewModel{
     var cards: [SCCardItem] = [SCCardItem]()
     var cardsInfo: SCCardsInfo?{
         didSet{
-            cards += cardsInfo?.cards ?? []
+            cards.removeAll()
+            cards = cardsInfo?.cards ?? []
         }
     }
     

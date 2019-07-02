@@ -58,6 +58,18 @@ class SCCardsDisplayView: UIView {
         tableView.separatorStyle = .none
     }
     
+    func disableDirectionButtons(){
+        for btn in directionButtons{
+            btn.isEnabled = false
+        }
+    }
+    
+    func enableDirectionButtons(){
+        for btn in directionButtons{
+            btn.isEnabled = true
+        }
+    }
+    
     @IBOutlet var directionButtons: [UIButton]!
     @IBOutlet weak var pageCountLabel: UILabel!
     @IBOutlet weak var tableView: UITableView!

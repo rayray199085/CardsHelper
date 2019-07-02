@@ -12,9 +12,7 @@ pod "AlamofireNetworkActivityIndicator"
 pod "pop"
 pod "DropDown"
 pod "SVProgressHUD"
-pod 'DLSlideView', :git => 'https://github.com/agdsdl/DLSlideView.git'
 pod "Atributika"
 pod "YYModel"
-pod 'MLeaksFinder'
 pod 'AAInfographics', :git => 'https://github.com/AAChartModel/AAChartKit-Swift.git'
 end
