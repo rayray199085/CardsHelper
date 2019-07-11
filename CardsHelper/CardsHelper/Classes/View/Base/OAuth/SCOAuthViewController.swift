@@ -36,7 +36,7 @@ class SCOAuthViewController: UIViewController {
 }
 private extension SCOAuthViewController{
     func setupUI(){
-     navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Back", fontSize: 16, target: self, action: #selector(goBack), isBack: true)
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Back", fontSize: 16, target: self, action: #selector(goBack), isBack: true)
     }
     func setupWebView(){
         guard let region = UserDefaults.standard.object(forKey: "region") as? String else{
